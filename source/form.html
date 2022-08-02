@@ -9,14 +9,12 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <div class="main-header__logo-wrapper">
-        <a class="main-header__logo-picture" href="../source/index.html">
-          <img src="../source/img/index/logo-mobile.svg" width="33" height="38"
-            alt="Логотип интернет-магазина Cat-energy">
+      <div class="main-header__logo logo">
+        <a class="logo__picture" href="index.html">
+          <img src="img/index/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина Cat-energy">
         </a>
-        <a class="main-header__logo-text logo-text" href="../source/index.html">
-          <img src="../source/img/index/logo-mobile-text.svg" width="101" height="18"
-            alt="Логотип интернет-магазина Cat-energy">
+        <a class="logo__text" href="index.html">
+          <img src="img/index/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
         </a>
       </div>
       <nav class="main-navigation">
@@ -36,107 +34,108 @@
     <p class="main-container__text">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
     <form class="main-container__form form" action="https://echo.htmlacademy.ru/" method="post" name="program-form">
-      <fieldset class="form__fieldset pet-info-group">
+      <fieldset class="form__fieldset input-group">
         <legend class="visually-hidden">Информация о животном</legend>
-        <ul class="pet-info-group__list">
-          <li class="pet-info-group__item">
-            <label class="pet-info-group__label"> Имя:*
-              <input class="pet-info-group__input" type="text" name="cat-name" placeholder="Кличка питомца"
-                value="Барсик" required>
-            </label>
-          </li>
-          <li class="pet-info-group__item">
-            <label class="pet-info-group__label"> Вес (кг):*
-              <input class="pet-info-group__input" type="number" name="cat-weight" placeholder="Вес питомца" value="7"
+        <ul class="input-group__list">
+          <li class="input-group__item">
+            <label class="input-group__label"> Имя:*
+              <input class="input-group__input" type="text" name="cat-name" placeholder="Кличка питомца" value="Барсик"
                 required>
             </label>
           </li>
-          <li class="pet-info-group__item">
-            <label class="pet-info-group__label"> Возраст (лет):
-              <input class="pet-info-group__input" type="number" name="cat-age" placeholder="Возраст питомца" value="7">
+          <li class="input-group__item">
+            <label class="input-group__label"> Вес (кг):*
+              <input class="input-group__input" type="number" name="cat-weight" placeholder="Вес питомца" value="7"
+                required>
+            </label>
+          </li>
+          <li class="input-group__item">
+            <label class="input-group__label"> Возраст (лет):
+              <input class="input-group__input" type="number" name="cat-age" placeholder="Возраст питомца" value="7">
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset program-group">
+      <fieldset class="form__fieldset radio-group">
         <legend class="visually-hidden">Выбор программы</legend>
-        <ul class="program-group__list">
-          <li class="program-group-item">
-            <label class="program-group__control">
-              <input class="program-group__input" type="checkbox" name="slim">
-              <span class="program-group__control-mark"></span>
-              <span class="program-group__control-label">Похудение</span>
+        <ul class="radio-group__list">
+          <li class="radio-group-item">
+            <label class="radio-group__control">
+              <input class="radio-group__input visually-hidden" type="radio" name="program-group__input" value="slim"
+                checked>
+              <span class="radio-group__control-mark"></span>
+              <span class="radio-group__control-label">Похудение</span>
             </label>
           </li>
-          <li class="program-group-item">
-            <label class="program-group__control">
-              <input class="program-group__input" type="checkbox" name="mass">
-              <span class="program-group__control-mark"></span>
-              <span class="program-group__control-label">Набор массы</span>
+          <li class="radio-group-item">
+            <label class="radio-group__control">
+              <input class="radio-group__input visually-hidden" type="radio" name="program-group__input" value="mass">
+              <span class="radio-group__control-mark"></span>
+              <span class="radio-group__control-label">Набор массы</span>
             </label>
           </li>
-          <li class="program-group-item">
-            <label class="program-group__control">
-              <input class="program-group__input" type="checkbox" name="help">
-              <span class="program-group__control-mark"></span>
-              <span class="program-group__control-label">Не знаю (нужен ваш совет)</span>
+          <li class="radio-group-item">
+            <label class="radio-groupp__control">
+              <input class="radio-group__input visually-hidden" type="radio" name="program-group__input" value="help">
+              <span class="radio-group__control-mark"></span>
+              <span class="radio-group__control-label">Не знаю (нужен ваш совет)</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset owner-data-group">
-        <legend class="owner-data__legend">Контактные данные (владельца кота)</legend>
-        <ul class="owner-data-group__list">
-          <li class="owner-data-group__item">
-            <label class="owner-data-group__label"> E-mail:*
-              <input class="owner-data-group__input" type="email" name="email" placeholder="Введите ваш email"
-                value="kuklachev@gmail.com" required>
+      <fieldset class="form__fieldset input-group">
+        <legend class="input-group__legend">Контактные данные (владельца кота)</legend>
+        <ul class="input-group__list">
+          <li class="input-group__item">
+            <label class="input-group__label"> E-mail:*
+              <input class="input-group__input input-group__input--email" type="email" name="email"
+                placeholder="Введите ваш email" value="kuklachev@gmail.com" required>
             </label>
           </li>
-          <li class="owner-data-group__item">
-            <label class="owner-data-group__label"> Телефон:*
-              <input class="owner-data-group__input" type="tel" name="phone-number"
+          <li class="input-group__item">
+            <label class="input-group__label"> Телефон:*
+              <input class="input-group__input input-group__input--phone" type="tel" name="phone-number"
                 placeholder="Введите ваш номер телефона" value="8 (960) 900-60-90" required>
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset comment-group">
-        <legend class="comment-group__legend">Комментарий</legend>
-        <label class="comment-group__label">
-          <textarea class="comment-group__text" name="comment-text"
+      <fieldset class="form__fieldset textarea-group">
+        <legend class="textarea-group__legend">Комментарий</legend>
+        <label class="textarea-group__label">
+          <textarea class="textarea-group__text" name="comment-text"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </fieldset>
-      <fieldset class="form__fieldset optional-group">
-        <legend class="optional-group-legend">Дополнительно</legend>
-        <ul class="optional-group__list">
-          <li class="optional-group-item">
-            <label class="optional-group__control">
-              <input class="optional-group__input" type="checkbox" name="sweetener">
-              <span class="optional-group__control-mark"></span>
-              <span class="optional-group__control-label">Сахарозаменитель</span>
+      <fieldset class="form__fieldset checkbox-group">
+        <legend class="checkbox-group-legend">Дополнительно</legend>
+        <ul class="checkbox-group__list">
+          <li class="checkbox-group__item">
+            <label class="checkbox-group__control">
+              <input class="checkbox-group__input" type="checkbox" name="sweetener">
+              <span class="checkbox-group__control-mark"></span>
+              <span class="checkbox-group__control-label">Сахарозаменитель</span>
             </label>
           </li>
-          <li class="optional-group-item">
-            <label class="optional-group__control">
-              <input class="optional-group__input" type="checkbox" name="water">
-              <span class="optional-group__control-mark"></span>
-              <span class="optional-group__control-label">Вода</span>
+          <li class="checkbox-group__item">
+            <label class="checkbox-group__control">
+              <input class="checkbox-group__input" type="checkbox" name="water">
+              <span class="checkbox-group__control-mark"></span>
+              <span class="checkbox-group__control-label">Вода</span>
             </label>
           </li>
-          <li class="optional-group-item">
-            <label class="optional-group__control">
-              <input class="optional-group__input" type="checkbox" name="milk">
-              <span class="optional-group__control-mark"></span>
-              <span class="optional-group__control-label">Молоко</span>
+          <li class="checkbox-group__item">
+            <label class="checkbox-group__control">
+              <input class="checkbox-group__input" type="checkbox" name="milk">
+              <span class="checkbox-group__control-mark"></span>
+              <span class="checkbox-group__control-label">Молоко</span>
             </label>
           </li>
-          <li class="optional-group-item">
-            <label class="optional-group__control">
-              <input class="optional-group__input" type="checkbox" name="vitamins">
-              <span class="optional-group__control-mark"></span>
-              <span class="optional-group__control-label">Витамины</span>
+          <li class="checkbox-group__item">
+            <label class="checkbox-group__control">
+              <input class="checkbox-group__input" type="checkbox" name="vitamins">
+              <span class="checkbox-group__control-mark"></span>
+              <span class="checkbox-group__control-label">Витамины</span>
             </label>
           </li>
         </ul>
@@ -157,15 +156,16 @@
             Санкт-Петербург
           </address>
         </div>
-        <img src="..//source/img/index/map.jpg" width="320" height="362" alt="Местоположение офиса Cat-energy ">
+        <img src="img/index/map.jpg" width="320" height="362" alt="Местоположение офиса Cat-energy ">
       </div>
-      <a class="main-footer__logo-text logo-text" href="../source/index.html">
-        <img src="../source/img/index/logo-mobile-text.svg" width="101" height="18"
-          alt="Логотип интернет-магазина Cat-energy">
-      </a>
+      <div class="main-footer__logo logo">
+        <a class="logo__text" href="index.html">
+          <img src="img/index/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
+        </a>
+      </div>
       <ul class="main-footer__social-list social-list">
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--vkontacte" href="#">
+          <a class="social-list__link social-list__link--vkontacte" href="#" target="_blank">
             <svg aria-hidden="true" focusable="false" width="27" height="17" viewBox="0 0 27 17" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -175,7 +175,7 @@
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--youtube" href="#">
+          <a class="social-list__link social-list__link--youtube" href="#" target="_blank">
             <svg aria-hidden="true" focusable="false" width="28" height="22" viewBox="0 0 28 22" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -185,7 +185,7 @@
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--telegram" href="#">
+          <a class="social-list__link social-list__link--telegram" href="#" target="_blank">
             <svg aria-hidden="true" focusable="false" width="20" height="18" viewBox="0 0 20 18" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -195,8 +195,8 @@
           </a>
         </li>
       </ul>
-      <a class="html-logo-link" href="https://htmlacademy.ru">
-        <p class="html-logo-link__text">HTML Academy</p>
+      <a class="html-logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <p class=" html-logo-link__text">HTML Academy</p>
         <svg aria-label="Логотип HTML-Academy" width="27" height="34" viewBox="0 0 27 34" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
