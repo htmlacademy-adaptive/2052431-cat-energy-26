@@ -37,21 +37,21 @@
       <fieldset class="form__fieldset input-group">
         <legend class="visually-hidden">Информация о животном</legend>
         <ul class="input-group__list">
-          <li class="input-group__item">
-            <label class="input-group__label"> Имя:*
-              <input class="input-group__input" type="text" name="cat-name" placeholder="Кличка питомца" value="Барсик"
+          <li class="input-group__item text-field">
+            <label class="text-field__label"> Имя:*
+              <input class="text-field__input" type="text" name="cat-name" placeholder="Кличка питомца" value="Барсик"
                 required>
             </label>
           </li>
-          <li class="input-group__item">
-            <label class="input-group__label"> Вес (кг):*
-              <input class="input-group__input" type="number" name="cat-weight" placeholder="Вес питомца" value="7"
+          <li class="input-group__item text-field">
+            <label class="text-field__label"> Вес (кг):*
+              <input class="text-field__input" type="number" name="cat-weight" placeholder="Вес питомца" value="7"
                 required>
             </label>
           </li>
-          <li class="input-group__item">
-            <label class="input-group__label"> Возраст (лет):
-              <input class="input-group__input" type="number" name="cat-age" placeholder="Возраст питомца" value="7">
+          <li class="input-group__item text-field">
+            <label class="text-field__label"> Возраст (лет):
+              <input class="text-field__input" type="number" name="cat-age" placeholder="Возраст питомца" value="7">
             </label>
           </li>
         </ul>
@@ -59,26 +59,26 @@
       <fieldset class="form__fieldset radio-group">
         <legend class="visually-hidden">Выбор программы</legend>
         <ul class="radio-group__list">
-          <li class="radio-group-item">
-            <label class="radio-group__control">
-              <input class="radio-group__input visually-hidden" type="radio" name="program-group__input" value="slim"
+          <li class="radio-group-item radio-field">
+            <label class="radio-field__control">
+              <input class="radio-field__input visually-hidden" type="radio" name="program-group__input" value="slim"
                 checked>
-              <span class="radio-group__control-mark"></span>
-              <span class="radio-group__control-label">Похудение</span>
+              <span class="radio-field__control-mark"></span>
+              <span class="radio-field__control-label">Похудение</span>
             </label>
           </li>
-          <li class="radio-group-item">
-            <label class="radio-group__control">
-              <input class="radio-group__input visually-hidden" type="radio" name="program-group__input" value="mass">
-              <span class="radio-group__control-mark"></span>
-              <span class="radio-group__control-label">Набор массы</span>
+          <li class="radio-group-item radio-field">
+            <label class="radio-field__control">
+              <input class="radio-field__input visually-hidden" type="radio" name="program-group__input" value="mass">
+              <span class="radio-field__control-mark"></span>
+              <span class="radio-field__control-label">Набор массы</span>
             </label>
           </li>
-          <li class="radio-group-item">
-            <label class="radio-groupp__control">
-              <input class="radio-group__input visually-hidden" type="radio" name="program-group__input" value="help">
-              <span class="radio-group__control-mark"></span>
-              <span class="radio-group__control-label">Не знаю (нужен ваш совет)</span>
+          <li class="radio-group-item radio-field">
+            <label class="radio-field__control">
+              <input class="radio-field__input visually-hidden" type="radio" name="program-group__input" value="help">
+              <span class="radio-field__control-mark"></span>
+              <span class="radio-field__control-label">Не знаю (нужен ваш совет)</span>
             </label>
           </li>
         </ul>
@@ -86,56 +86,56 @@
       <fieldset class="form__fieldset input-group">
         <legend class="input-group__legend">Контактные данные (владельца кота)</legend>
         <ul class="input-group__list">
-          <li class="input-group__item">
-            <label class="input-group__label"> E-mail:*
-              <input class="input-group__input input-group__input--email" type="email" name="email"
+          <li class="input-group__item text-field">
+            <label class="text-field__label"> E-mail:*
+              <input class="text-field__input text-field__input--email" type="email" name="email"
                 placeholder="Введите ваш email" value="kuklachev@gmail.com" required>
             </label>
           </li>
-          <li class="input-group__item">
-            <label class="input-group__label"> Телефон:*
-              <input class="input-group__input input-group__input--phone" type="tel" name="phone-number"
+          <li class="input-group__item text-field">
+            <label class="text-field__label"> Телефон:*
+              <input class="text-field__input text-field__input--phone" type="tel" name="phone-number"
                 placeholder="Введите ваш номер телефона" value="8 (960) 900-60-90" required>
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset textarea-group">
-        <legend class="textarea-group__legend">Комментарий</legend>
-        <label class="textarea-group__label">
-          <textarea class="textarea-group__text" name="comment-text"
+      <fieldset class="form__fieldset textarea-field">
+        <legend class="textarea-field__legend">Комментарий</legend>
+        <label class="textarea-field__label">
+          <textarea class="textarea-field__text" name="comment-text"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </fieldset>
       <fieldset class="form__fieldset checkbox-group">
         <legend class="checkbox-group-legend">Дополнительно</legend>
         <ul class="checkbox-group__list">
-          <li class="checkbox-group__item">
-            <label class="checkbox-group__control">
-              <input class="checkbox-group__input" type="checkbox" name="sweetener">
-              <span class="checkbox-group__control-mark"></span>
-              <span class="checkbox-group__control-label">Сахарозаменитель</span>
+          <li class="checkbox-group__item checkbox-field">
+            <label class="checkbox-field__control">
+              <input class="checkbox-field__input" type="checkbox" name="sweetener">
+              <span class="checkbox-field__control-mark"></span>
+              <span class=checkbox-field__control-label">Сахарозаменитель</span>
+            </label>
+          </li>
+          <li class="checkbox-group__item checkbox-field">
+            <label class="checkbox-field__control">
+              <input class="checkbox-field__input" type="checkbox" name="water">
+              <span class="checkbox-field__control-mark"></span>
+              <span class="checkbox-field__control-label">Вода</span>
             </label>
           </li>
           <li class="checkbox-group__item">
-            <label class="checkbox-group__control">
-              <input class="checkbox-group__input" type="checkbox" name="water">
-              <span class="checkbox-group__control-mark"></span>
-              <span class="checkbox-group__control-label">Вода</span>
+            <label class="checkbox-group__control checkbox-field">
+              <input class="checkbox-field__input" type="checkbox" name="milk">
+              <span class="checkbox-field__control-mark"></span>
+              <span class="checkbox-field__control-label">Молоко</span>
             </label>
           </li>
-          <li class="checkbox-group__item">
-            <label class="checkbox-group__control">
-              <input class="checkbox-group__input" type="checkbox" name="milk">
-              <span class="checkbox-group__control-mark"></span>
-              <span class="checkbox-group__control-label">Молоко</span>
-            </label>
-          </li>
-          <li class="checkbox-group__item">
-            <label class="checkbox-group__control">
-              <input class="checkbox-group__input" type="checkbox" name="vitamins">
-              <span class="checkbox-group__control-mark"></span>
-              <span class="checkbox-group__control-label">Витамины</span>
+          <li class="checkbox-group__item checkbox-field">
+            <label class="checkbox-field__control">
+              <input class="checkbox-field__input" type="checkbox" name="vitamins">
+              <span class="checkbox-field__control-mark"></span>
+              <span class="checkbox-field__control-label">Витамины</span>
             </label>
           </li>
         </ul>
