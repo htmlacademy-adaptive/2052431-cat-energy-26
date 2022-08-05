@@ -1,0 +1,41 @@
+.buttons-switcher {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.buttons-switcher__caption {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.buttons-switcher__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 6px;
+  padding-right: 6px;
+  width: 86px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 6px;
+
+}
+
+.buttons-switcher__button {
+  display: none;
+  width: 36px;
+  height: 6px;
+  box-sizing: border-box;
+  background-color: #68B738;
+  border: 0;
+  border-radius: 6px;
+  &--active {
+    display: block;
+  }
+}
