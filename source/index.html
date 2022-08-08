@@ -19,7 +19,7 @@
         </a>
       </div>
       <nav class="main-navigation">
-        <button class="main-navigation__toogle" type="button">
+        <button class="main-navigation__toogle main-navigation__toogle--active" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-navigation__list site-list">
@@ -144,8 +144,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <div class="main-footer__location location">
+      <section class="main-footer__location location">
         <div class="location__wrapper">
           <h2 class="location__title">Приглашаем к сотрудничеству диллеров</h2>
           <address class="location__address">
@@ -154,8 +153,9 @@
             Санкт-Петербург
           </address>
         </div>
-        <img src="img/index/map.jpg" width="320" height="362" alt="Местоположение офиса Cat-energy ">
-      </div>
+        <img class="location__map" src="img/index/map.jpg" width="320" height="362" alt="Местоположение офиса Cat-energy ">
+      </section>
+      <div class="main-footer__wrapper">
       <div class="main-footer__logo logo">
         <a class="logo__text" href="index.html">
           <img src="img/index/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
@@ -194,7 +194,7 @@
         </li>
       </ul>
       <a class="main-footer__html-logo-link html-logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <p class=" html-logo-link__text">HTML Academy</p>
+        <span class="html-logo-link__text">HTML Academy</span>
         <svg aria-label="Логотип HTML-Academy" width="27" height="34" viewBox="0 0 27 34" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
@@ -203,6 +203,7 @@
         </svg>
       </a>
     </div>
+
   </footer>
 </body>
 

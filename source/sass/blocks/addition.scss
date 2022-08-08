@@ -1,0 +1,25 @@
+
+.addition-wrapper {
+  margin: 0 auto;
+}
+
+.addition__title {
+  margin: 0;
+  margin-bottom: 36px;
+  font-family: $additional-font-family;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+}
+
+.addition__list {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.addition__item:not(:last-of-type) {
+  margin-bottom: 31px;
+}

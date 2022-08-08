@@ -1,8 +1,5 @@
 .main-container__promo {
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  max-width: 320px;
 }
 
 .main-container__option {
@@ -11,4 +8,28 @@
 
 .main-container__advantages {
   margin-bottom: 49px;
+}
+
+.main-container__title {
+  margin-bottom: 49px;
+
+  &--form {
+    margin-bottom: 37px;
+  }
+}
+
+.main-container__text {
+  margin-bottom: 39px;
+}
+
+.main-container__addition {
+  margin-bottom: 35px;
+}
+
+.main-container__offer {
+  margin-bottom: 35px;
+}
+
+.main-container__form-wrapper {
+  margin: 0 auto;
 }

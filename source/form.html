@@ -22,7 +22,8 @@
         <button class="main-navigation__toogle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-navigation__list site-list">
+        <!-- Не забыть убрать вижили хидден -->
+        <ul class="main-navigation__list site-list visually-hidden">
           <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
           <li class="site-list__item"><a class="site-list__link" href="form.html">Подбор программы</a></li>
@@ -31,35 +32,34 @@
     </div>
   </header>
   <main class="main-container">
-    <h1 class="main-container__title">Подбор программы</h1>
-    <p class="main-container__text">Заполните анкету, и мы подберем
+    <div class="main-container__form-wrapper">
+    <h1 class="main-container__title main-container__title--form main-title">Подбор программы</h1>
+    <p class="main-container__text form-caption">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
     <form class="main-container__form form" action="https://echo.htmlacademy.ru/" method="post" name="program-form">
       <fieldset class="form__fieldset input-group">
         <legend class="visually-hidden">Информация о животном</legend>
-        <ul class="input-group__list">
+        <ul class="form__list input-group__list">
           <li class="input-group__item text-field">
-            <label class="text-field__label"> Имя:*
-              <input class="text-field__input" type="text" name="cat-name" placeholder="Кличка питомца" value="Барсик"
+            <label class="text-field__label" for="cat-name"> Имя:*</label>
+              <input class="text-field__input" type="text" id="cat-name" name="cat-name" placeholder="Кличка питомца" value="Барсик"
                 required>
-            </label>
           </li>
           <li class="input-group__item text-field">
-            <label class="text-field__label"> Вес (кг):*
-              <input class="text-field__input" type="number" name="cat-weight" placeholder="Вес питомца" value="7"
+            <label class="text-field__label" for="cat-weight"> Вес (кг):* </label>
+              <input class="text-field__input" type="number" id="cat-weight" name="cat-weight" placeholder="Вес питомца" value="7"
                 required>
-            </label>
           </li>
           <li class="input-group__item text-field">
-            <label class="text-field__label"> Возраст (лет):
-              <input class="text-field__input" type="number" name="cat-age" placeholder="Возраст питомца" value="7">
-            </label>
+            <label class="text-field__label" for="cat-age"> Возраст (лет):</label>
+              <input class="text-field__input" id="cat-age" type="number" name="cat-age" placeholder="Возраст питомца" value="7">
+
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset radio-group">
+      <fieldset class="form__fieldset form__fieldset--radio-group radio-group">
         <legend class="visually-hidden">Выбор программы</legend>
-        <ul class="radio-group__list">
+        <ul class="form__list radio-group__list">
           <li class="radio-group-item radio-field">
             <label class="radio-field__control">
               <input class="radio-field__input visually-hidden" type="radio" name="program-group__input" value="slim"
@@ -84,38 +84,36 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset input-group">
+      <fieldset class="form__fieldset form__fieldset--owner-group input-group">
         <legend class="input-group__legend">Контактные данные (владельца кота)</legend>
-        <ul class="input-group__list">
+        <ul class="form__list input-group__list">
           <li class="input-group__item text-field">
-            <label class="text-field__label"> E-mail:*
-              <input class="text-field__input text-field__input--email" type="email" name="email"
+            <label class="text-field__label" for="email"> E-mail:* </label>
+              <input class="text-field__input text-field__input--email" type="email" id="email" name="email"
                 placeholder="Введите ваш email" value="kuklachev@gmail.com" required>
-            </label>
           </li>
           <li class="input-group__item text-field">
-            <label class="text-field__label"> Телефон:*
-              <input class="text-field__input text-field__input--phone" type="tel" name="phone-number"
+            <label class="text-field__label" for="phone"> Телефон:*</label>
+              <input class="text-field__input text-field__input--phone" type="tel" id="phone" name="phone-number"
                 placeholder="Введите ваш номер телефона" value="8 (960) 900-60-90" required>
-            </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset textarea-field">
+      <fieldset class="form__fieldset form__fieldset--textarea-field textarea-field">
         <legend class="textarea-field__legend">Комментарий</legend>
         <label class="textarea-field__label">
           <textarea class="textarea-field__text" name="comment-text"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </fieldset>
-      <fieldset class="form__fieldset checkbox-group">
+      <fieldset class="form__fieldset form__fieldset--checkbox-group checkbox-group">
         <legend class="checkbox-group-legend">Дополнительно</legend>
-        <ul class="checkbox-group__list">
+        <ul class="form__list checkbox-group__list">
           <li class="checkbox-group__item checkbox-field">
             <label class="checkbox-field__control">
               <input class="checkbox-field__input" type="checkbox" name="sweetener">
               <span class="checkbox-field__control-mark"></span>
-              <span class=checkbox-field__control-label">Сахарозаменитель</span>
+              <span class="checkbox-field__control-label">Сахарозаменитель</span>
             </label>
           </li>
           <li class="checkbox-group__item checkbox-field">
@@ -144,7 +142,7 @@
       <button class="form__button button" type="submit">Отправить заявку</button>
       <p class="form__remark">* — Обязательные поля</p>
     </form>
-
+  </div>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
@@ -157,7 +155,7 @@
             Санкт-Петербург
           </address>
         </div>
-        <img src="img/index/map.jpg" width="320" height="362" alt="Местоположение офиса Cat-energy ">
+        <img class="location__map" src="img/index/map.jpg" width="320" height="362" alt="Местоположение офиса Cat-energy ">
       </div>
       <div class="main-footer__logo logo">
         <a class="logo__text" href="index.html">

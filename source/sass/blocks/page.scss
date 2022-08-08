@@ -3,9 +3,9 @@
 }
 
 .page__body {
-  background-color: #ffffff;
-  font-family: "Arial", sans-serif;
+  background-color: $white;
+  font-family: $basic-font-family;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $font-grey;
 }

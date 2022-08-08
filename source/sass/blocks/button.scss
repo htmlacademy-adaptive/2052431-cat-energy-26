@@ -4,10 +4,11 @@
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: "Oswald", sans-serif;
+  border: 0;
+  font-family: $additional-font-family;
   font-weight: 400;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #68b738;
+  color: $white;
+  background-color: $basic-green;
   text-decoration: none;
 }

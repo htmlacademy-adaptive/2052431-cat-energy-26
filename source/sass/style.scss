@@ -1,21 +1,22 @@
+@import "./variables.scss";
+@import "./blocks/button.scss";
 @import "./blocks/addition.scss";
 @import "./blocks/addition-card.scss";
 @import "./blocks/advantages.scss";
-@import "./blocks/button.scss";
 @import "./blocks/buttons-switcher.scss";
-@import "./blocks/card-content.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/checkbox-field.scss";
 @import "./blocks/checkbox-group.scss";
+@import "./blocks/form-caption.scss";
 @import "./blocks/form.scss";
 @import "./blocks/html-logo-link.scss";
 @import "./blocks/input-group.scss";
 @import "./blocks/location.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/main-container.scss";
-@import "./blocks/main-footer.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-navigation.scss";
+@import "./blocks/main-title.scss";
 @import "./blocks/nutrition-program.scss";
 @import "./blocks/offer.scss";
 @import "./blocks/option.scss";
@@ -32,6 +33,6 @@
 @import "./blocks/social-list.scss";
 @import "./blocks/text-field.scss";
 @import "./blocks/textarea-field.scss";
+@import "./blocks/main-footer.scss";
 @import "./blocks/visually-hidden.scss";
 @import "./fonts/fonts.scss";
-
