@@ -1,5 +1,4 @@
 .product-card-wrapper {
-  margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 14px;
 }
@@ -8,9 +7,6 @@
   width: 68px;
   height: 86px;
   object-fit: contain;
-  padding-top: 12px;
-  padding-right: 28px;
-  padding-left: 28px;
 }
 
 .products-list__item {
@@ -26,12 +22,9 @@
   margin-bottom: 18px;
 }
 
-.product-card__wrapper {
-  margin-bottom: 9px;
-}
-
 .product-card__list {
   margin: 0;
+  margin-bottom: 9px;
   padding: 0;
   font-size: 12px;
   line-height: 16px;

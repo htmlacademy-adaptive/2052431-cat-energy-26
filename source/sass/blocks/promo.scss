@@ -4,17 +4,8 @@
   background-repeat: no-repeat;
 }
 
-
-.promo__wrapper {
-  margin: 0 auto;
-}
-
 .promo__title {
-  margin: 0;
   margin-bottom: 25px;
-  font-family: $additional-font-family;
-  font-weight: 400;
-  font-size: 36px;
   line-height: 36px;
   color: $white;
 }
@@ -39,8 +30,8 @@
 
 .promo__button {
   max-width: 280px;
-  padding-right: 44px + 28px;
-  padding-left: 44px + 28px;
+  padding-right: 72px;
+  padding-left: 72px;
   font-family: $additional-font-family;
   font-size: 14px;
   line-height: 18px;

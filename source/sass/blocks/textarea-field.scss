@@ -1,5 +1,13 @@
 .textarea-field__text {
+  width: 100%;
+  min-height: 174px;
+  box-sizing: border-box;
   resize: none;
+  font-family: $additional-font-family;
+  font-size: 16px;
+  line-height: 18px;
+  color: $font-grey;
+  text-transform: uppercase;
 }
 
 .textarea-field__text::placeholder {
