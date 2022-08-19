@@ -19,17 +19,19 @@
           <img src="img/index/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
         </a>
       </div>
-      <button class="main-navigation__toogle main-navigation__toogle--active" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-        <!-- Навигация -->
-      <nav class="main-navigation">
+      <!-- Навигация -->
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <button class="main-navigation__toogle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       <!-- убрать вижили хидден -->
-        <ul class="main-navigation__list site-list site-list--active">
-          <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item site-list__item--active"><a class="site-list__link" href="index.html">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
           <li class="site-list__item"><a class="site-list__link" href="form.html">Подбор программы</a></li>
         </ul>
+      </div>
       </nav>
     </div>
   </header>
@@ -65,7 +67,7 @@
         </div>
         </li>
         <li class="products-list__item product-card product-card--big">
-          <div class="product-card-wrapper container">
+          <div class="product-card-wrapper">
             <div class="product-card__image-wrapper product-card__image-wrapper--big">
           <img class="product-card__image product-card__image--big" src="img/catalog/catalog-chicken-1000.jpg"
             alt="Корм для кошек Cat Energy PRO с курицей 1000 грамм"></div>
@@ -90,7 +92,7 @@
           </div>
         </li>
         <li class="products-list__item product-card">
-          <div class="product-card-wrapper container">
+          <div class="product-card-wrapper">
             <div class="product-card__image-wrapper">
           <img class="product-card__image" src="img/catalog/catalog-fish-500.jpg"
             alt="Корм для кошек Cat Energy PRO с рыбой 500 грамм"></div>
@@ -115,7 +117,7 @@
           </div>
           </li>
           <li class="products-list__item product-card product-card--big">
-            <div class="product-card-wrapper container">
+            <div class="product-card-wrapper">
               <div class="product-card__image-wrapper product-card__image-wrapper--big">
             <img class="product-card__image product-card__image--big" src="img/catalog/catalog-fish-1000.jpg"
               alt="Корм для кошек Cat Energy PRO с рыбой 1000 грамм"></div>
@@ -140,7 +142,7 @@
             </div>
             </li>
         <li class="products-list__item product-card">
-          <div class="product-card-wrapper container">
+          <div class="product-card-wrapper">
             <div class="product-card__image-wrapper">
           <img class="product-card__image" src="img/catalog/catalog-buckwheat-500.jpg"
             alt="Корм для кошек Cat Energy SLIM с гречкой 500 грамм"></div>
@@ -165,7 +167,7 @@
           </div>
         </li>
         <li class="products-list__item product-card product-card--big">
-          <div class="product-card-wrapper container">
+          <div class="product-card-wrapper">
             <div class="product-card__image-wrapper product-card__image-wrapper--big">
           <img class="product-card__image product-card__image--big" src="img/catalog/catalog-buckwheat-1000.jpg"
             alt="Корм для кошек Cat Energy SLIM с гречкой 1000 грамм"></div>
@@ -190,7 +192,7 @@
           </div>
         </li>
         <li class="products-list__item product-card">
-          <div class="product-card-wrapper container">
+          <div class="product-card-wrapper">
             <div class="product-card__image-wrapper">
           <img class="product-card__image" src="img/catalog/catalog-rice.jpg"
             alt="Корм для кошек Cat Energy SLIM с рисом 500 грамм"></div>
@@ -224,7 +226,7 @@
       </ol>
 
     </section>
-    <section class="inner-container__addition addition container">
+    <section class="inner-container__addition addition">
       <div class="addition__wrapper">
       <h2 class="addition__title">Дополнительные товары</h2>
       <ul class="addition__list">

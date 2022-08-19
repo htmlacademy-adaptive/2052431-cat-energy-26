@@ -1,10 +1,10 @@
 .main-title {
   margin: 0;
-  margin-bottom: 49px;
   font-family: $additional-font-family;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

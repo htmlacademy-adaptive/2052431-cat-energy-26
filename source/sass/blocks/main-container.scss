@@ -1,16 +1,14 @@
 .main-container {
   flex-grow: 1;
-}
-
-.main-container__text {
-  margin: 0;
-  margin-bottom: 39px;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
+    width: 709px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 66px;
+    width: 1220px;
   }
 }
+

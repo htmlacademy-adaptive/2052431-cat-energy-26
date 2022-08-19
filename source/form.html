@@ -12,31 +12,33 @@
   <header class="main-header">
     <div class="main-header__wrapper container">
       <div class="main-header__logo logo">
-        <a class="logo__link" href="index.html">
-          <img class="logo__picture" src="img/index/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина Cat-energy">
+        <a class="logo__picture" href="index.html">
+          <img src="img/index/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина Cat-energy">
         </a>
-        <a class="logo__link" href="index.html">
-          <img class="logo__text" src="img/index/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
+        <a class="logo__text" href="index.html">
+          <img src="img/index/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
         </a>
       </div>
       <!-- Навигация -->
-      <nav class="main-navigation">
-        <button class="main-navigation__toogle main-navigation__toogle--active" type="button">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <button class="main-navigation__toogle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       <!-- убрать вижили хидден -->
+      <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
-          <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a class="site-list__link" href="index.html">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
           <li class="site-list__item"><a class="site-list__link" href="form.html">Подбор программы</a></li>
         </ul>
+      </div>
       </nav>
     </div>
   </header>
   <main class="main-container inner-container">
-    <div class="main-container__form-wrapper container">
-    <h1 class="main-container__title main-container__title--form main-title title title">Подбор программы</h1>
-    <p class="main-container__text form-caption">Заполните анкету, и мы подберем <br>
+    <div class="main-container__form-wrapper">
+    <h1 class="inner-container__title inner-container__title--form main-title">Подбор программы</h1>
+    <p class="inner-container__text form-caption">Заполните анкету, и мы подберем <br>
       программу питания для вашего кота</p>
     <form class="main-container__form form" action="https://echo.htmlacademy.ru/" method="post" name="program-form">
       <div class="form__fieldset-wrapper">
@@ -153,7 +155,7 @@
   <footer class="main-footer">
     <!-- Локация -->
       <section class="main-footer__location location">
-        <div class="location__wrapper container">
+        <div class="location__wrapper">
           <h2 class="location__title">Приглашаем к сотрудничеству диллеров</h2>
           <address class="location__address">
             <span>ул. Большая Конюшенная, д. 19/8</span>
