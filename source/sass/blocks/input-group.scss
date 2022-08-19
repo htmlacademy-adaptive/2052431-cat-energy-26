@@ -1,17 +1,47 @@
+.input-group {
+  @media (min-width: $desktop-width) {
+    width: 569px;
+  }
+}
+
 .input-group__legend {
   margin-bottom: 35px;
-  font-family: $additional-font-family;
-  font-size: 24px;
-  line-height: 26px;
-  color: $black;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.input-group__list--owner {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .input-group__item {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .input-group__item:last-child:last-child {
   margin-bottom: 0;
+}
+
+.input-group__item--owner {
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin-bottom: 0;
+  }
 }
 
 .text-field__input[value] {
@@ -19,4 +49,14 @@
   font-size: 16px;
   line-height: 18px;
   color: $font-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

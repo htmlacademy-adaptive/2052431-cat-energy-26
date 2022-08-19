@@ -1,7 +1,49 @@
 .checkbox-group-legend {
   margin-bottom: 34px;
-  font-family: $additional-font-family;
-  font-size: 24px;
-  line-height: 26px;
-  color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
+}
+
+.checkbox-group__list {
+  @media (min-width: $tablet-width) {
+    min-width: 565px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 32px;
+    column-gap: 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.checkbox-group__item {
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 104px;
+  }
+}
+
+.checkbox-group__item:last-child {
+  margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }

@@ -1,11 +1,40 @@
+.text-field {
+  max-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    max-width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 569px;
+  }
+}
+
 .text-field__label {
+  margin-right: 10px;
   font-family: $additional-font-family;
   font-size: 16px;
   text-transform: uppercase;
   color: $font-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 15px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 12px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .text-field__input {
+  flex-grow: 1;
   margin: 0;
   padding: 0;
   padding-top: 13px;
@@ -16,6 +45,22 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $font-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .text-field__input::-webkit-outer-spin-button,

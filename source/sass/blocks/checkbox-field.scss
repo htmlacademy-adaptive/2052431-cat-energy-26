@@ -1,5 +1,14 @@
+.checkbox-field {
+  display: flex;
+  align-items: center;
+}
+
 .checkbox-field__control-mark {
+  display: block;
   margin-right: 18px;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #cdcdcd;
 }
 
 .checkbox-field__control-label {
