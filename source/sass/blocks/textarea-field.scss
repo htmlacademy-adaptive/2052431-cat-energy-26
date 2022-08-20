@@ -1,0 +1,57 @@
+.textarea-field__text {
+  width: 100%;
+  min-height: 174px;
+  padding-top: 9px;
+  padding-left: 15px;
+  resize: none;
+  font-family: $additional-font-family;
+  font-size: 16px;
+  line-height: 18px;
+  color: $font-grey;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-left: 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    padding-left: 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.textarea-field__text::placeholder {
+  font-family: $additional-font-family;
+  font-size: 16px;
+  line-height: 18px;
+  color: $font-grey;
+  text-transform: uppercase;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.textarea-field__legend {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
+}
