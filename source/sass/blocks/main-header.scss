@@ -1,0 +1,35 @@
+.main-header {
+  margin: 0 auto;
+}
+
+.main-header__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-header__logo {
+  width: 188px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+}

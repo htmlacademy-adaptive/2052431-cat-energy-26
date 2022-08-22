@@ -1,0 +1,41 @@
+.buttons-switcher {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+.buttons-switcher__caption {
+  font-family: $additional-font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.buttons-switcher__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 6px;
+  padding-right: 6px;
+  width: 86px;
+  height: 14px;
+  background-color: $white;
+  border-radius: 6px;
+}
+
+.buttons-switcher__button {
+  width: 36px;
+  height: 6px;
+  border: 0;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--active {
+    background-color: $basic-green;
+  }
+}

@@ -1,0 +1,18 @@
+.html-logo-link {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 18px;
+  color: $font-grey;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
+  }
+}
