@@ -1,26 +1,111 @@
 .nutrition-program {
-  width: 280px;
+  position: relative;
   padding-top: 30px;
   padding-bottom: 18px;
   padding-left: 20px;
   padding-right: 33px;
   background-color: $basic-grey;
 
+  &::before {
+    position: absolute;
+    content: "";
+    top: 23px;
+    left: 25px;
+    background-color: $basic-green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 708px;
+    padding-top: 75px;
+    padding-bottom: 55px;
+    padding-left: 50px;
+    padding-right: 316px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      left: 446px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
-    padding-top: 77px;
-    padding-bottom: 55px;
-    padding-left: 52px;
-    padding-right: 52px;
+    padding-right: 50px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+    }
+  }
+}
+
+.nutrition-program--slim {
+  &::after {
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    left: 32px;
+    width: 36px;
+    height: 50px;
+    content: "";
+    background-image: url("../../img/index/slim-icon.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 80px;
+      left: 476px;
+      background-image: url("../../img/index/slim-icon-tablet.svg");
+      width: 140px;
+      height: 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 40px;
+      left: 62px;
+      background-image: url("../../img/index/slim-icon-desktop.svg");
+      width: 70px;
+      height: 97px;
+    }
+  }
+}
+
+.nutrition-program--mass {
+  &::after {
+    position: absolute;
+    z-index: 100;
+    top: 35px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    content: "";
+    background-image: url("../../img/index/muscles-icon.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 135px;
+      left: 412px;
+      background-image: url("../../img/index/muscles-icon-tablet.svg");
+      width: 268px;
+      height: 112px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 67px;
+      left: 33px;
+      background-image: url("../../img/index/muscles-icon-desktop.svg");
+      width: 134px;
+      height: 56px;
+    }
   }
 }
 
 .nutrition-program__title {
   margin: 0;
+  margin-left: 70px;
   margin-bottom: 29px;
   font-family: $additional-font-family;
   font-weight: 400;
@@ -28,35 +113,43 @@
   line-height: 37px;
   color: $black;
   text-transform: uppercase;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-left: 0;
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 162px;
     margin-bottom: 73px;
-    font-size: 36px;
-    line-height: 36px;
   }
 }
 
 .nutrition-program__text {
+  position: relative;
   margin: 0;
   margin-bottom: 38px;
+
+  &::after {
+    position: absolute;
+    top: 113px;
+    left: 0;
+    content: "";
+    width: 240px;
+    height: 1px;
+    background-color: #d9d9d9;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 48px;
     font-size: 16px;
     line-height: 24px;
-  }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 48px;
-    font-size: 16px;
-    line-height: 24px;
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -74,10 +167,15 @@
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-.nutrition-program__icon {
-  position: absolute;
-  left: 101px;
-  top: 7px;
+  &::after {
+    position: absolute;
+    left: 102px;
+    top: 6px;
+    content: "";
+    background: url("../../img/index/arrow-link.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 12px;
+  }
 }

@@ -1,4 +1,6 @@
 .offer {
+  position: relative;
+  background-color: $basic-green;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     url("../../img/catalog/offer-cat.jpg");
   background-repeat: no-repeat;
@@ -9,6 +11,29 @@
     max-height: 290px;
   }
 }
+
+.offer::before {
+  position: absolute;
+  top: 60px;
+  left: 100px;
+  content: "";
+  width: 80px;
+  height: 82px;
+  background-image: url("../../img/catalog/icon-gift.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 63px;
+    left: 97px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    top: 56px;
+    left: 84px;
+  }
+}
+
 
 .offer__text {
   margin: 0;

@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 69px;
+    margin-bottom: 70px;
   }
 }
 
@@ -88,18 +88,8 @@
 
 .form__button-wrapper {
   @media (min-width: $tablet-width) {
-    min-width: 565px;
-    width: 565px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 829px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -110,11 +100,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    margin-right: 60px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 568px;
-    margin-bottom: 0;
+    margin-right: 80px;
   }
 }
 

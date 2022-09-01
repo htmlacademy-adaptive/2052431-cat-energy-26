@@ -21,8 +21,6 @@
 
 @media (min-width: $desktop-width) {
   .slider-list {
-    margin-bottom: 25px;
-    flex-direction: row;
     overflow: hidden;
   }
 }
@@ -33,17 +31,8 @@
   &--active {
     display: block;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .slider-list__item {
-    overflow: hidden;
-    display: block;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider-list__item {
+  @media (min-width: $tablet-width) {
     overflow: hidden;
     display: block;
   }
@@ -52,19 +41,10 @@
 .slider-list__image {
   width: 280px;
   height: 232px;
-}
 
-@media (min-width: $tablet-width) {
-  .slider-list__image {
+  @media (min-width: $tablet-width) {
     width: 592px;
     max-width: 592px;
-    height: 511px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider-list__image {
-    width: 592px;
     height: 511px;
   }
 }
