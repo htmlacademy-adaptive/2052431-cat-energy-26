@@ -10,4 +10,9 @@
   color: $white;
   background-color: $basic-green;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
 }

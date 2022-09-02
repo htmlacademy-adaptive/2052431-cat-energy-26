@@ -1,13 +1,36 @@
 .social-list {
-  width: 131px;
+  position: relative;
+  max-width: 150px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  &::before {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+  }
+  }
 }
 
 .social-list__link {
   display: block;
+  color: #666666;
+}
+
+.social-list__link:hover .social-list__icon {
+  color: $basic-green;
 }

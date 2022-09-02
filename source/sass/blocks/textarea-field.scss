@@ -16,13 +16,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 10px;
-    padding-left: 19px;
-    font-size: 20px;
-    line-height: 30px;
-  }
 }
 
 .textarea-field__text::placeholder {
@@ -37,21 +30,12 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
 }
 
 .textarea-field__legend {
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
-  }
-
-  @media (min-width: $desktop-width) {
     margin-bottom: 76px;
   }
 }

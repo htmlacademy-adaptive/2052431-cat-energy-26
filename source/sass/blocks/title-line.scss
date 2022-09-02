@@ -1,0 +1,42 @@
+.title-line {
+  position: relative;
+  max-width: 230px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1000%;
+    height: 2px;
+    background-color: $basic-green;
+    top: 50%;
+    left: calc(100% + 22px);
+    z-index: 100;
+    overflow: hidden;
+
+    @media (min-width: $tablet-width) {
+      left: calc(100% + 36px);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 350px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1000%;
+      height: 2px;
+      background-color: $basic-green;
+      top: 50%;
+      right: calc(100% + 36px);
+    }
+  }
+}
+
+.title-line--owner-info {
+  max-width: 190px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 520px;
+  }
+}

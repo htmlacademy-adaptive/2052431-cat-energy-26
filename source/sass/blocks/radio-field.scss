@@ -2,6 +2,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
 }
 
 .radio-field__control-label {
@@ -15,19 +16,65 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
+.radio-field__input {
+  position: relative;
 }
 
 .radio-field__control-mark {
   position: relative;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-right: 15px;
   border: 1px solid #cdcdcd;
   border-radius: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.radio-field__input:checked + .radio-field__control-mark::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.radio-field__control:hover .radio-field__control-mark::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.radio-field__control:disabled {
+  opacity: 0.3;
+}
+
+.radio-field__input:focus + .radio-field__control-mark {
+  border-color: $black;
 }
