@@ -57,7 +57,7 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     &::after {
       position: absolute;
       z-index: -1;
@@ -75,7 +75,7 @@
 
 .advantages__item--healthy {
   &::before {
-    background-image: url("../../img/index/healthy-icon.svg");
+    background-image: url("../../img/index/icons/healthy-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -83,7 +83,7 @@
 
 .advantages__item--powder {
   &::before {
-    background-image: url("../../img/index/powder-icon.svg");
+    background-image: url("../../img/index/icons/powder-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -91,7 +91,7 @@
 
 .advantages__item--eat {
   &::before {
-    background-image: url("../../img/index/eat-icon.svg");
+    background-image: url("../../img/index/icons/eat-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -99,7 +99,7 @@
 
 .advantages__item--alarm {
   &::before {
-    background-image: url("../../img/index/alarm-icon.svg");
+    background-image: url("../../img/index/icons/alarm-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }

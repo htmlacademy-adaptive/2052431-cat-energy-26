@@ -14,6 +14,10 @@
     background-position: center center;
     background-size: cover;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/retina/cat-promo-mobile@2x.jpg");
+    }
   }
 }
 
@@ -41,10 +45,14 @@
     width: 50%;
     height: 100%;
     content: "";
-    background-image: url("../../img/index/cat-promo-desktop.png");
+    background-image: url("../../img/index/desktop/cat-promo-desktop.png");
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/retina/cat-promo-desktop@2x.png");
+    }
   }
 }
 
