@@ -2,13 +2,20 @@
   position: relative;
   background-color: $basic-green;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../../img/catalog/offer-cat.jpg");
+    url("../../img/catalog/mobile/offer-cat.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../img/catalog/tablet/cat-offer-tablet.jpg");
+  }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     max-height: 290px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../img/catalog/mobile/offer-cat.jpg");
   }
 }
 
@@ -19,7 +26,7 @@
   content: "";
   width: 80px;
   height: 82px;
-  background-image: url("../../img/catalog/icon-gift.svg");
+  background-image: url("../../img/catalog/icon/icon-gift.svg");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
