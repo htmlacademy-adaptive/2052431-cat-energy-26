@@ -1,10 +1,12 @@
 .addition-card {
+  position: relative;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -51,8 +53,13 @@
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-end;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: desktop-width) {
+    justify-content: flex-start;
   }
 }
 
@@ -77,4 +84,8 @@
   @media (min-width: $tablet-width) {
     flex-basis: 290px;
   }
+}
+
+.addition-card__property {
+  margin-right: auto;
 }

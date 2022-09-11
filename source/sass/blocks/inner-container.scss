@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
-    padding-top: 54px;
+    padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,11 +16,21 @@
   }
 }
 
+.inner-container--form {
+  @media (min-width: $tablet-width) {
+    padding-left: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
 .inner-container__title {
   margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 82px;
+    margin-bottom: 79px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +43,7 @@
 
   &::after {
     position: absolute;
-    bottom: -38px;
+    bottom: -42px;
     left: 50%;
     transform: translateX(-50%);
     content: "";
@@ -61,14 +71,14 @@
 
 .inner-container__text {
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 66px;
+    margin-bottom: 63px;
   }
 }
 

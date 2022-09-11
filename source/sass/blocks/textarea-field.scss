@@ -1,6 +1,6 @@
 .textarea-field__text {
   width: 100%;
-  min-height: 174px;
+  min-height: 150px;
   padding-top: 9px;
   padding-left: 15px;
   resize: none;
@@ -11,10 +11,16 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    width: auto;
+    min-height: 174px;
     padding-top: 10px;
     padding-left: 19px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
   }
 }
 

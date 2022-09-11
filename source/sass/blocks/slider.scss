@@ -72,6 +72,10 @@
     height: 512px;
   }
 
+  @media (min-width: $desktop-width) {
+    left: 282px;
+  }
+
   &::before {
     position: absolute;
     top: 108px;
@@ -88,6 +92,10 @@
 
     @media (min-width: $tablet-width) {
       top: 256px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 236px;
     }
   }
 }

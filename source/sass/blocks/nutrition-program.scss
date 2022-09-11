@@ -1,16 +1,16 @@
 .nutrition-program {
   position: relative;
-  padding-top: 30px;
+  padding-top: 33px;
   padding-bottom: 18px;
-  padding-left: 20px;
+  padding-left: 16px;
   padding-right: 33px;
   background-color: $basic-grey;
 
   &::before {
     position: absolute;
     content: "";
-    top: 23px;
-    left: 25px;
+    top: 26px;
+    left: 19px;
     background-color: $basic-green;
     width: 50px;
     height: 50px;
@@ -33,12 +33,13 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 50px;
+    padding-left: 61px;
 
     &::before {
       width: 100px;
       height: 100px;
-      top: 47px;
-      left: 52px;
+      top: 48px;
+      left: 59px;
     }
   }
 }
@@ -47,8 +48,8 @@
   &::after {
     position: absolute;
     z-index: 100;
-    top: 20px;
-    left: 32px;
+    top: 24px;
+    left: 25px;
     width: 36px;
     height: 50px;
     content: "";
@@ -65,7 +66,7 @@
 
     @media (min-width: $desktop-width) {
       top: 40px;
-      left: 62px;
+      left: 74px;
       background-size: 70px 97px;
       width: 70px;
       height: 97px;
@@ -78,7 +79,7 @@
     position: absolute;
     z-index: 100;
     top: 35px;
-    left: 13px;
+    left: 9px;
     width: 67px;
     height: 28px;
     content: "";
@@ -95,7 +96,7 @@
 
     @media (min-width: $desktop-width) {
       top: 67px;
-      left: 33px;
+      left: 41px;
       width: 134px;
       height: 56px;
       background-size: 134px 56px;
@@ -105,8 +106,8 @@
 
 .nutrition-program__title {
   margin: 0;
-  margin-left: 70px;
-  margin-bottom: 29px;
+  margin-left: 68px;
+  margin-bottom: 31px;
   font-family: $additional-font-family;
   font-weight: 400;
   font-size: 24px;
@@ -122,7 +123,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 162px;
+    margin-left: 163px;
     margin-bottom: 73px;
   }
 }
@@ -134,7 +135,7 @@
 
   &::after {
     position: absolute;
-    top: 113px;
+    top: 108px;
     left: 0;
     content: "";
     width: 240px;
@@ -151,12 +152,16 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .nutrition-program__link {
   padding-top: 4px;
   padding-bottom: 4px;
-  padding-right: 47px;
+  padding-right: 40px;
   font-family: $additional-font-family;
   font-weight: 400;
   font-size: 16px;
@@ -168,6 +173,12 @@
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 24px 12px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 52px;
+  }
 }
 
 .nutrition-program__link:hover {

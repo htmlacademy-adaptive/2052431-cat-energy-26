@@ -10,7 +10,7 @@
 }
 
 .advantages__title {
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
@@ -33,7 +33,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
+    column-gap: 87px;
   }
 }
 
@@ -113,7 +113,7 @@
 }
 
 .advantages__item:not(:last-of-type) {
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

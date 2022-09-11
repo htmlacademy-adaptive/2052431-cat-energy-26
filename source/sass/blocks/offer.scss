@@ -30,13 +30,13 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    top: 63px;
-    left: 97px;
+    top: 55px;
+    left: 79px;
   }
 
 
   @media (min-width: $desktop-width) {
-    top: 56px;
+    top: 62px;
     left: 84px;
   }
 }
@@ -59,9 +59,6 @@
     padding-right: 124px;
     padding-top: 69px;
     padding-bottom: 69px;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: left;
   }
 
 
@@ -71,8 +68,5 @@
     padding-right: 40px;
     padding-top: 184px;
     padding-bottom: 42px;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
   }
 }
