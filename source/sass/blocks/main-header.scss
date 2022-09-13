@@ -6,6 +6,11 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
   }
 }
 
@@ -41,6 +46,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-self: center;
     width: 200px;
     height: 60px;
   }

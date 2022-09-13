@@ -1,10 +1,9 @@
 .social-list {
   position: relative;
-  max-width: 150px;
+  width: 135px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   gap: 24px;
   margin: 0;
   padding: 0;
@@ -22,13 +21,22 @@
 
     @media (min-width: $tablet-width) {
       display: none;
+    }
   }
+
+  @media (min-width: $tablet-width) {
+    min-width: 132px;
   }
 }
 
 .social-list__link {
   display: block;
-  color: #666666;
+  color: #2d0c0c;
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 22px;
+  }
 }
 
 .social-list__link:hover .social-list__icon {

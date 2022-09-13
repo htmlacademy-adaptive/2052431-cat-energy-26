@@ -1,16 +1,16 @@
 .nutrition-program {
   position: relative;
-  padding-top: 33px;
+  padding-top: 29px;
   padding-bottom: 18px;
-  padding-left: 16px;
+  padding-left: 22px;
   padding-right: 33px;
   background-color: $basic-grey;
 
   &::before {
     position: absolute;
     content: "";
-    top: 26px;
-    left: 19px;
+    top: 23px;
+    left: 22px;
     background-color: $basic-green;
     width: 50px;
     height: 50px;
@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 75px;
+    padding-top: 69px;
     padding-bottom: 55px;
     padding-left: 50px;
     padding-right: 316px;
@@ -26,20 +26,21 @@
     &::before {
       width: 200px;
       height: 200px;
-      top: 92px;
+      top: 85px;
       left: 446px;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 50px;
-    padding-left: 61px;
+    padding-left: 52px;
+    padding-top: 77px;
 
     &::before {
       width: 100px;
       height: 100px;
-      top: 48px;
-      left: 59px;
+      top: 47px;
+      left: 52px;
     }
   }
 }
@@ -48,8 +49,8 @@
   &::after {
     position: absolute;
     z-index: 100;
-    top: 24px;
-    left: 25px;
+    top: 19px;
+    left: 29px;
     width: 36px;
     height: 50px;
     content: "";
@@ -57,7 +58,7 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: 80px;
+      top: 74px;
       left: 476px;
       background-size: 140px 194px;
       width: 140px;
@@ -65,8 +66,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 40px;
-      left: 74px;
+      top: 42px;
+      left: 67px;
       background-size: 70px 97px;
       width: 70px;
       height: 97px;
@@ -78,8 +79,8 @@
   &::after {
     position: absolute;
     z-index: 100;
-    top: 35px;
-    left: 9px;
+    top: 33px;
+    left: 13px;
     width: 67px;
     height: 28px;
     content: "";
@@ -87,7 +88,7 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: 135px;
+      top: 128px;
       left: 412px;
       width: 268px;
       height: 112px;
@@ -96,7 +97,7 @@
 
     @media (min-width: $desktop-width) {
       top: 67px;
-      left: 41px;
+      left: 34px;
       width: 134px;
       height: 56px;
       background-size: 134px 56px;
@@ -144,7 +145,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 53px;
     font-size: 16px;
     line-height: 24px;
 
@@ -154,7 +155,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 }
 
@@ -174,9 +175,13 @@
   background-position: right center;
   background-size: 24px 12px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    padding-right: 52px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-right: 52px;
   }
 }

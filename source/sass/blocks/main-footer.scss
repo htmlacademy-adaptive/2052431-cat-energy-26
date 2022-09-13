@@ -11,7 +11,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-top: 58px;
+    padding-top: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,5 +34,9 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
   }
 }

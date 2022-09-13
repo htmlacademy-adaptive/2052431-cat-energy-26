@@ -13,7 +13,7 @@
   margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 }
 
@@ -27,13 +27,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 37px;
-    column-gap: 153px;
+    column-gap: 59px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 87px;
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 76px;
   }
 }
 
@@ -55,14 +55,19 @@
       width: 80px;
       height: 80px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 37px;
+      left: -2px;
+      }
   }
 
   @media (min-width: $tablet-width) {
     &::after {
       position: absolute;
       z-index: -1;
-      top: 40px;
-      right: 34px;
+      top: 0;
+      right: 91px;
       width: 120px;
       content: counter(advantages-counter);
       font-family: $additional-font-family;
@@ -75,7 +80,7 @@
   @media (min-width: $desktop-width) {
     &::after {
       top: 0;
-      right: 0;
+      right: 15px;
     }
   }
 }
@@ -109,6 +114,14 @@
     background-image: url("../../img/index/icons/alarm-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+}
+
+.advantages__item--alarm br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 

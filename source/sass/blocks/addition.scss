@@ -11,7 +11,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +22,7 @@
 
 .addition__title {
   margin: 0;
-  margin-bottom: 47px;
+  margin-bottom: 31px;
   font-family: $additional-font-family;
   font-weight: 400;
   font-size: 24px;
@@ -30,7 +30,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 132px;
+    margin-bottom: 81px;
     margin-left: 36px;
     font-size: 36px;
     line-height: 36px;
@@ -38,69 +38,85 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    margin-bottom: 82px;
+    margin-bottom: 53px;
   }
 }
 
 
 .addition__list {
-  position: relative;
+  // position: relative;
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 10px;
   padding: 0;
+  padding-top: 13px;
   list-style-type: none;
+  border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 64px;
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-top: 26px;
+    border: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    padding-left: 0;
     padding-right: 0;
-  }
+    padding-top: 25px;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    }
 }
 
-.addition__list::before {
-  position: absolute;
-  top: -13px;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #d9d9d9;
+// .addition__list::before {
+//   position: absolute;
+//   top: -13px;
+//   left: 0;
+//   content: "";
+//   width: 100%;
+//   height: 1px;
+//   background-color: #d9d9d9;
+
+//   @media (min-width: $tablet-width) {
+//     top: -52px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     top: -1px;
+//   }
+// }
+
+.addition__item {
+  padding-bottom: 19px;
+  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
-    top: -52px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -1px;
+    padding-left: 2px;
+    padding-right: 0;
   }
-}
 
-.addition__item {
-  position: relative;
+  // &::after {
+  //   position: absolute;
+  //   bottom: -18px;
+  //   left: 0;
+  //   content: "";
+  //   width: 100%;
+  //   height: 1px;
+  //   background-color: #d9d9d9;
 
-  &::after {
-    position: absolute;
-    bottom: -18px;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #d9d9d9;
+  //   @media (min-width: $tablet-width) {
+  //     bottom: -26px;
+  //   }
 
-    @media (min-width: $tablet-width) {
-      bottom: -26px;
-    }
-
-    @media (min-width: $desktop-width) {
-      bottom: -2px;
-    }
-  }
+  //   @media (min-width: $desktop-width) {
+  //     bottom: -2px;
+  //   }
+  // }
 
   @media (min-width: $desktop-width) {
     padding-top: 16px;
@@ -109,10 +125,10 @@
 }
 
 .addition__item:not(:last-of-type) {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
