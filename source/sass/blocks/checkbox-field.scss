@@ -6,9 +6,9 @@
 .checkbox-field__control-mark {
   position: relative;
   display: block;
-  margin-right: 20px;
-  width: 25px;
-  height: 25px;
+  margin-right: 16px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
@@ -23,6 +23,11 @@
   line-height: 18px;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .checkbox-field__input:checked + .checkbox-field__control-mark::before {
@@ -60,4 +65,3 @@
     background-size: 24px 18px;
   }
 }
-

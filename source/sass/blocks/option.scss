@@ -21,10 +21,10 @@
 }
 
 .option__item:not(:last-of-type) {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {

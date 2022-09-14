@@ -18,18 +18,19 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 
 .checkbox-group__item {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 220px;
+    flex-basis: 195px;
   }
 }
 

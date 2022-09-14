@@ -2,7 +2,7 @@
   padding-top: 26px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 83px;
+    padding-top: 109px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,12 +26,12 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 95px;
-    left: 10%;
-    padding-left: 80px;
+    top: 97px;
+    left: 111px;
+    padding-left: 78px;
     padding-right: 80px;
     padding-bottom: 58px;
-    padding-top: 58px;
+    padding-top: 59px;
     align-items: center;
     gap: 85px;
     width: 565px;
@@ -81,7 +81,7 @@
 .location__map-wrapper {
   width: 100%;
   height: 362px;
-  background-image: url("../../img/index/map.jpg");
+  background-image: url("../../img/index/mobile/map-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -100,6 +100,7 @@
   width: 100%;
   height: 362px;
   object-fit: cover;
+  border: none;
 
   @media (min-width: $tablet-width) {
     height: 400px;

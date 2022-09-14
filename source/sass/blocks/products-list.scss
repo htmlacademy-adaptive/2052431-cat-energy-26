@@ -9,35 +9,50 @@
     justify-items: flex-start;
     align-items: flex-end;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    row-gap: 19px;
+    column-gap: 62px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $tablet-width) {
+    row-gap: 59px;
+    column-gap: 64px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 78px;
+    row-gap: 65px;
+    margin-bottom: 74px;
   }
 }
 
 .products-list__item {
-  position: relative;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #cdcdcd;
+  // position: relative;
 
-  &::after {
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    content: "";
-    width: 1000px;
-    height: 1px;
-    background-color: #d9d9d9;
+  // &::after {
+  //   position: absolute;
+  //   bottom: -12px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   content: "";
+  //   width: 1000px;
+  //   height: 1px;
+  //   background-color: #d9d9d9;
 
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
+  //   @media (min-width: $tablet-width) {
+  //     display: none;
+  //   }
+  // }
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+}
 }
 
 .products-list__item:not(:last-of-type) {
-  margin-bottom: 19px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

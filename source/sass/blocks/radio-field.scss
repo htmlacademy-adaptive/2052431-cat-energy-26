@@ -35,6 +35,10 @@
     width: 40px;
     height: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
 }
 
 .radio-field__input:checked + .radio-field__control-mark::before {

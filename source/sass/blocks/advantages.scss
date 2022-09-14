@@ -10,10 +10,10 @@
 }
 
 .advantages__title {
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 }
 
@@ -27,13 +27,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 37px;
-    column-gap: 153px;
+    column-gap: 59px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 76px;
   }
 }
 
@@ -55,14 +55,19 @@
       width: 80px;
       height: 80px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 37px;
+      left: -2px;
+      }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     &::after {
       position: absolute;
       z-index: -1;
-      top: 40px;
-      right: 34px;
+      top: 0;
+      right: 91px;
       width: 120px;
       content: counter(advantages-counter);
       font-family: $additional-font-family;
@@ -71,11 +76,18 @@
       color: $basic-grey;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 0;
+      right: 15px;
+    }
+  }
 }
 
 .advantages__item--healthy {
   &::before {
-    background-image: url("../../img/index/healthy-icon.svg");
+    background-image: url("../../img/index/icons/healthy-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -83,7 +95,7 @@
 
 .advantages__item--powder {
   &::before {
-    background-image: url("../../img/index/powder-icon.svg");
+    background-image: url("../../img/index/icons/powder-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -91,7 +103,7 @@
 
 .advantages__item--eat {
   &::before {
-    background-image: url("../../img/index/eat-icon.svg");
+    background-image: url("../../img/index/icons/eat-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -99,14 +111,22 @@
 
 .advantages__item--alarm {
   &::before {
-    background-image: url("../../img/index/alarm-icon.svg");
+    background-image: url("../../img/index/icons/alarm-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
 }
 
+.advantages__item--alarm br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
 .advantages__item:not(:last-of-type) {
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

@@ -1,24 +1,26 @@
 .show-more {
   position: relative;
-  padding-top: 53px;
+  padding-top: 72px;
   padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 160px;
+    padding-top: 161px;
     padding-bottom: 40px;
     border: 2px solid $basic-grey;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 40px;
+    padding-bottom: 36px;
   }
+
+
 }
 
 
 .show-more::before {
   position: absolute;
-  top: 18px;
-  left: 135px;
+  top: 32px;
+  left: 122px;
   content: "";
   width: 30px;
   height: 2px;
@@ -26,19 +28,20 @@
 
   @media (min-width: $tablet-width) {
     width: 60px;
-    top: 52px;
-    left: 132px;
+    top: 80px;
+    left: 130px;
   }
 
   @media (min-width: $desktop-width) {
+    top: 76px;
     left: 92px;
   }
 }
 
 .show-more::after {
   position: absolute;
-  top: 18px;
-  left: 135px;
+  top: 32px;
+  left: 122px;
   content: "";
   width: 30px;
   height: 2px;
@@ -47,13 +50,14 @@
 
   @media (min-width: $tablet-width) {
     width: 60px;
-    top: 52px;
-    left: 132px;
+    top: 79px;
+    left: 131px;
     display: block;
   }
 
   @media (min-width: $desktop-width) {
-    left: 92px;
+    top: 75px;
+    left: 95px;
   }
 }
 
@@ -84,10 +88,25 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 21px;
     font-size: 20px;
     line-height: 22px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.show-more__title br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
@@ -98,17 +117,18 @@
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 87px;
-    padding-left: 79px;
-    padding-right: 79px;
+    padding-left: 78px;
+    padding-right: 78px;
+    margin-bottom: 86px;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 18px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 39px;
     padding-right: 39px;
+    margin-bottom: 89px;
   }
 }
 

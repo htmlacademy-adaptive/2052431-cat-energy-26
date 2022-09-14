@@ -1,27 +1,43 @@
 .main-index-container__promo {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .main-index-container__option {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 75px;
   }
 }
 
 .main-index-container__advantages {
-  margin-bottom: 49px;
+  margin-bottom: 53px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 43px;
+    margin-bottom: 3px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 22px;
+    padding-left: 0;
+  }
+}
+
+.main-index-container__result {
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }

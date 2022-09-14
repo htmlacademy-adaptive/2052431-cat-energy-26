@@ -1,8 +1,8 @@
 .nutrition-program {
   position: relative;
-  padding-top: 30px;
+  padding-top: 29px;
   padding-bottom: 18px;
-  padding-left: 20px;
+  padding-left: 22px;
   padding-right: 33px;
   background-color: $basic-grey;
 
@@ -10,7 +10,7 @@
     position: absolute;
     content: "";
     top: 23px;
-    left: 25px;
+    left: 22px;
     background-color: $basic-green;
     width: 50px;
     height: 50px;
@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 75px;
+    padding-top: 69px;
     padding-bottom: 55px;
     padding-left: 50px;
     padding-right: 316px;
@@ -26,13 +26,15 @@
     &::before {
       width: 200px;
       height: 200px;
-      top: 92px;
+      top: 85px;
       left: 446px;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 50px;
+    padding-left: 52px;
+    padding-top: 77px;
 
     &::before {
       width: 100px;
@@ -47,26 +49,26 @@
   &::after {
     position: absolute;
     z-index: 100;
-    top: 20px;
-    left: 32px;
+    top: 19px;
+    left: 29px;
     width: 36px;
     height: 50px;
     content: "";
-    background-image: url("../../img/index/slim-icon.svg");
+    background-image: url("../../img/index/icons/slim-icon.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: 80px;
+      top: 74px;
       left: 476px;
-      background-image: url("../../img/index/slim-icon-tablet.svg");
+      background-size: 140px 194px;
       width: 140px;
       height: 194px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 40px;
-      left: 62px;
-      background-image: url("../../img/index/slim-icon-desktop.svg");
+      top: 42px;
+      left: 67px;
+      background-size: 70px 97px;
       width: 70px;
       height: 97px;
     }
@@ -77,36 +79,36 @@
   &::after {
     position: absolute;
     z-index: 100;
-    top: 35px;
+    top: 33px;
     left: 13px;
     width: 67px;
     height: 28px;
     content: "";
-    background-image: url("../../img/index/muscles-icon.svg");
+    background-image: url("../../img/index/icons/muscles-icon.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: 135px;
+      top: 128px;
       left: 412px;
-      background-image: url("../../img/index/muscles-icon-tablet.svg");
       width: 268px;
       height: 112px;
+      background-size: 268px 112px;
     }
 
     @media (min-width: $desktop-width) {
       top: 67px;
-      left: 33px;
-      background-image: url("../../img/index/muscles-icon-desktop.svg");
+      left: 34px;
       width: 134px;
       height: 56px;
+      background-size: 134px 56px;
     }
   }
 }
 
 .nutrition-program__title {
   margin: 0;
-  margin-left: 70px;
-  margin-bottom: 29px;
+  margin-left: 68px;
+  margin-bottom: 31px;
   font-family: $additional-font-family;
   font-weight: 400;
   font-size: 24px;
@@ -122,7 +124,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 162px;
+    margin-left: 163px;
     margin-bottom: 73px;
   }
 }
@@ -134,7 +136,7 @@
 
   &::after {
     position: absolute;
-    top: 113px;
+    top: 108px;
     left: 0;
     content: "";
     width: 240px;
@@ -143,7 +145,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 53px;
     font-size: 16px;
     line-height: 24px;
 
@@ -151,15 +153,16 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
+  }
 }
 
 .nutrition-program__link {
-  position: relative;
-  display: block;
-  min-width: 134px;
   padding-top: 4px;
   padding-bottom: 4px;
-  padding-right: 47px;
+  padding-right: 40px;
   font-family: $additional-font-family;
   font-weight: 400;
   font-size: 16px;
@@ -167,15 +170,26 @@
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
+  background: url("../../img/index/icons/arrow-link.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 24px 12px;
 
-  &::after {
-    position: absolute;
-    left: 102px;
-    top: 6px;
-    content: "";
-    background: url("../../img/index/arrow-link.svg");
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 12px;
+  @media (min-width: $tablet-width) {
+    padding-right: 52px;
+    font-size: 20px;
+    line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 52px;
+  }
+}
+
+.nutrition-program__link:hover {
+  padding-right: 57px;
+  background: url("../../img/index/icons/arrow-link-hover.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 32px 12px;
 }
