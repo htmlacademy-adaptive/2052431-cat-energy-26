@@ -29,7 +29,6 @@
 
 .products-list__item {
   padding-bottom: 25px;
-  border-bottom: 1px solid #cdcdcd;
   // position: relative;
 
   // &::after {
@@ -46,15 +45,14 @@
   //     display: none;
   //   }
   // }
-  @media (min-width: $tablet-width) {
-    border-bottom: none;
-}
 }
 
 .products-list__item:not(:last-of-type) {
   margin-bottom: 8px;
+  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    border-bottom: none;
   }
 }
