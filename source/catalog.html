@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -13,13 +13,13 @@
     <div class="main-header__logo logo">
       <a class="logo__picture" href="index.html" aria-label="Главная страница">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/index/icons/logo-desktop.svg" width="70" height="60">
-          <source media="(min-width: 768px)" srcset="img/index/icons/logo-tablet.svg" width="60" height="50">
-        <img src="img/index/icons/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина Cat-energy">
+          <source media="(min-width: 1440px)" srcset="img/index/bg-icons/logo-desktop.svg" width="70" height="60">
+          <source media="(min-width: 768px)" srcset="img/index/bg-icons/logo-tablet.svg" width="60" height="50">
+        <img src="img/index/bg-icons/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина Cat-energy">
       </picture>
       </a>
       <a class="logo__text" href="index.html" aria-label="Главная страница">
-        <img src="img/index/icons/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
+        <img src="img/index/bg-icons/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
       </a>
     </div>
     <!-- Навигация -->
@@ -46,8 +46,15 @@
         <li class="products-list__item product-card">
           <div class="product-card-wrapper">
           <div class="product-card__image-wrapper">
-            <img class="product-card__image" src="img/catalog/mobile/catalog-chicken-500.jpg"
+            <picture>
+            <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/desktop/product1-desktop.webp 1x, img/catalog/retina/product1-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/tablet/product1-tablet.webp 1x, img/catalog/retina/product1-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/catalog/mobile/product1-mobile.webp 1x, img/catalog/retina/product1-mobile@2x.webp 2x"> -->
+            <source media="(min-width: 1440px)" srcset="img/catalog/desktop/product1-desktop.png 1x, img/catalog/retina/product1-desktop@2x.png">
+            <source media="(min-width: 768px)" srcset="img/catalog/tablet/product1-tablet.png 1x, img/catalog/retina/product1-tablet@2x.png 2x">
+            <img class="product-card__image" src="img/catalog/mobile/product1-mobile.png" srcset="img/catalog/retina/product1-mobile@2x.png"
             alt="Корм для кошек Cat Energy PRO с курицей 500 грамм">
+          </picture>
           </div>
             <div class="product-card__content-wrapper">
               <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
@@ -72,8 +79,16 @@
         <li class="products-list__item product-card product-card--big">
           <div class="product-card-wrapper">
             <div class="product-card__image-wrapper product-card__image-wrapper--big">
-          <img class="product-card__image product-card__image--big" src="img/catalog/mobile/catalog-chicken-1000.jpg"
-            alt="Корм для кошек Cat Energy PRO с курицей 1000 грамм"></div>
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/desktop/product2-desktop.webp 1x, img/catalog/retina/product2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/tablet/product2-tablet.webp 1x, img/catalog/retina/product2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/mobile/product2-mobile.webp 1x, img/catalog/retina/product2-mobile@2x.webp 2x"> -->
+                <source media="(min-width: 1440px)" srcset="img/catalog/desktop/product2-desktop.png 1x, img/catalog/retina/product2-desktop@2x.png">
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/product2-tablet.png 1x, img/catalog/retina/product2-tablet@2x.png 2x">
+                <img class="product-card__image product-card__image--big" src="img/catalog/mobile/product2-mobile.png" srcset="img/catalog/retina/product2-mobile@2x.png"
+                alt="Корм для кошек Cat Energy PRO с курицей 1000 грамм">
+              </picture>
+            </div>
             <div class="product-card__content-wrapper">
               <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
               <dl class="product-card__list">
@@ -97,8 +112,16 @@
         <li class="products-list__item product-card">
           <div class="product-card-wrapper">
             <div class="product-card__image-wrapper">
-          <img class="product-card__image" src="img/catalog/mobile/catalog-fish-500.jpg"
-            alt="Корм для кошек Cat Energy PRO с рыбой 500 грамм"></div>
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/desktop/product3-desktop.webp 1x, img/catalog/retina/product3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/tablet/product3-tablet.webp 1x, img/catalog/retina/product3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/mobile/product3-mobile.webp 1x, img/catalog/retina/product3-mobile@2x.webp 2x"> -->
+                <source media="(min-width: 1440px)" srcset="img/catalog/desktop/product3-desktop.png 1x, img/catalog/retina/product3-desktop@2x.png">
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/product3-tablet.png 1x, img/catalog/retina/product3-tablet@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/mobile/product3-mobile.png" srcset="img/catalog/retina/product3-mobile@2x.png"
+                alt="Корм для кошек Cat Energy PRO с рыбой 500 грамм">
+              </picture>
+          </div>
             <div class="product-card__content-wrapper">
               <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
               <dl class="product-card__list">
@@ -122,8 +145,16 @@
           <li class="products-list__item product-card product-card--big">
             <div class="product-card-wrapper">
               <div class="product-card__image-wrapper product-card__image-wrapper--big">
-            <img class="product-card__image product-card__image--big" src="img/catalog/mobile/catalog-fish-1000.jpg"
-              alt="Корм для кошек Cat Energy PRO с рыбой 1000 грамм"></div>
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/desktop/product4-desktop.webp 1x, img/catalog/retina/product4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/tablet/product4-tablet.webp 1x, img/catalog/retina/product4-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/mobile/product4-mobile.webp 1x, img/catalog/retina/product4-mobile@2x.webp 2x"> -->
+                  <source media="(min-width: 1440px)" srcset="img/catalog/desktop/product4-desktop.png 1x, img/catalog/retina/product4-desktop@2x.png">
+                  <source media="(min-width: 768px)" srcset="img/catalog/tablet/product4-tablet.png 1x, img/catalog/retina/product4-tablet@2x.png 2x">
+                  <img class="product-card__image product-card__image--big" src="img/catalog/mobile/product4-mobile.png" srcset="img/catalog/retina/product4-mobile@2x.png"
+                  alt="Корм для кошек Cat Energy PRO с рыбой 1000 грамм">
+                </picture>
+            </div>
               <div class="product-card__content-wrapper">
                 <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
                 <dl class="product-card__list">
@@ -147,8 +178,16 @@
         <li class="products-list__item product-card">
           <div class="product-card-wrapper">
             <div class="product-card__image-wrapper">
-          <img class="product-card__image" src="img/catalog/mobile/catalog-buckwheat-500.jpg"
-            alt="Корм для кошек Cat Energy SLIM с гречкой 500 грамм"></div>
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/desktop/product5-desktop.webp 1x, img/catalog/retina/product5-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/tablet/product5-tablet.webp 1x, img/catalog/retina/product5-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/mobile/product5-mobile.webp 1x, img/catalog/retina/product5-mobile@2x.webp 2x"> -->
+                <source media="(min-width: 1440px)" srcset="img/catalog/desktop/product5-desktop.png 1x, img/catalog/retina/product5-desktop@2x.png">
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/product5-tablet.png 1x, img/catalog/retina/product5-tablet@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/mobile/product5-mobile.png" srcset="img/catalog/retina/product5-mobile@2x.png"
+                alt="Корм для кошек Cat Energy SLIM с гречкой 500 грамм">
+              </picture>
+          </div>
             <div class="product-card__content-wrapper">
               <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
               <dl class="product-card__list">
@@ -172,8 +211,16 @@
         <li class="products-list__item product-card product-card--big">
           <div class="product-card-wrapper">
             <div class="product-card__image-wrapper product-card__image-wrapper--big">
-          <img class="product-card__image product-card__image--big" src="img/catalog/mobile/catalog-buckwheat-1000.jpg"
-            alt="Корм для кошек Cat Energy SLIM с гречкой 1000 грамм"></div>
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/desktop/product6-desktop.webp 1x, img/catalog/retina/product6-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/tablet/product6-tablet.webp 1x, img/catalog/retina/product6-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/mobile/product6-mobile.webp 1x, img/catalog/retina/product6-mobile@2x.webp 2x"> -->
+                <source media="(min-width: 1440px)" srcset="img/catalog/desktop/product6-desktop.png 1x, img/catalog/retina/produc63-desktop@2x.png">
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/product6-tablet.png 1x, img/catalog/retina/product6-tablet@2x.png 2x">
+                <img class="product-card__image product-card__image--big" src="img/catalog/mobile/product6-mobile.png" srcset="img/catalog/retina/product6-mobile@2x.png"
+                alt="Корм для кошек Cat Energy SLIM с гречкой 1000 грамм">
+              </picture>
+            </div>
             <div class="product-card__content-wrapper">
               <h3 class="product-card__title">Cat Energy SLIM 1000 г</h3>
               <dl class="product-card__list">
@@ -197,8 +244,16 @@
         <li class="products-list__item product-card">
           <div class="product-card-wrapper">
             <div class="product-card__image-wrapper">
-          <img class="product-card__image" src="img/catalog/mobile/catalog-rice.jpg"
-            alt="Корм для кошек Cat Energy SLIM с рисом 500 грамм"></div>
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/desktop/product7-desktop.webp 1x, img/catalog/retina/product7-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/tablet/product7-tablet.webp 1x, img/catalog/retina/product7-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/mobile/product7-mobile.webp 1x, img/catalog/retina/product7-mobile@2x.webp 2x"> -->
+                <source media="(min-width: 1440px)" srcset="img/catalog/desktop/product7-desktop.png 1x, img/catalog/retina/produc7-desktop@2x.png">
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/product7-tablet.png 1x, img/catalog/retina/product7-tablet@2x.png 2x">
+                <img class="product-card__image" src="img/catalog/mobile/product7-mobile.png" srcset="img/catalog/retina/product7-mobile@2x.png"
+                alt="Корм для кошек Cat Energy SLIM с рисом 500 грамм">
+              </picture>
+          </div>
             <div class="product-card__content-wrapper">
               <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
               <dl class="product-card__list">
@@ -314,7 +369,7 @@
       <div class="main-footer__wrapper container">
       <div class="main-footer__logo logo logo--footer">
         <a class="logo__text--footer" href="index.html" aria-label="Главная страница">
-          <img src="img/index/icons/logo-mobile-text.svg" width="128" height="24" alt="Логотип интернет-магазина Cat-energy">
+          <img src="img/index/bg-icons/logo-mobile-text.svg" width="128" height="24" alt="Логотип интернет-магазина Cat-energy">
         </a>
       </div>
       <!-- Социальный сети -->

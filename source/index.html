@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
-  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="manifest" href="manifest.webmanifest">
   </head>
 
 <body class="page__body">
@@ -18,13 +18,13 @@
       <div class="main-header__logo logo">
         <a class="logo__picture" href="index.html" aria-label="Главная страница">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/index/icons/logo-desktop.svg" width="70" height="60">
-            <source media="(min-width: 768px)" srcset="img/index/icons/logo-tablet.svg" width="60" height="50">
-          <img src="img/index/icons/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина Cat-energy">
+            <source media="(min-width: 1440px)" srcset="img/index/bg-icons/logo-desktop.svg" width="70" height="60">
+            <source media="(min-width: 768px)" srcset="img/index/bg-icons/logo-tablet.svg" width="60" height="50">
+            <img src="img/index/bg-icons/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина Cat-energy">
         </picture>
         </a>
         <a class="logo__text" href="index.html" aria-label="Главная страница">
-          <img src="img/index/icons/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
+          <img src="img/index/bg-icons/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
         </a>
       </div>
       <!-- Навигация -->
@@ -53,12 +53,14 @@
         <p class="promo__text">Занялся собой? Займись котом!</p>
       </div>
         <picture>
-        <source media="(min-width: 1440px)" srcset="img/index/desktop/product-promo-desktop.png 1x, img/index/retina/product-promo-desktop@2x.png 2x" width="552" height="499">
-        <source media="(min-width: 768px)" srcset="img/index/tablet/product-promo-tablet.png 1x, img/index/retina/product-promo-tablet@2x.png 2x" width="709" height="609">
-        <img class="promo__image" src="img/index/mobile/product-promo-mobile.png" srcset="img/index/retina/product-promo-mobile@2x.png 2x"  width="280" height="270" alt="Корм Cat-energy pro с курицей">
-      </picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/index/desktop/product-promo-desktop.webp 1x, img/index/retina/product-promo-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index/tablet/product-promo-tablet.webp 1x, img/index/retina/product-promo-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index/mobile/product-promo-mobile.webp 1x, img/index/retina/product-promo-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/index/desktop/product-promo-desktop.png 1x, img/index/retina/product-promo-desktop@2x.png 2x" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="img/index/tablet/product-promo-tablet.png 1x, img/index/retina/product-promo-tablet@2x.png 2x" width="709" height="609">
+          <img class="promo__image" src="img/index/mobile/product-promo-mobile.png" srcset="img/index/retina/product-promo-mobile@2x.png 2x"  width="280" height="270" alt="Корм Cat-energy pro с курицей">
+        </picture>
         <a class="promo__button button" href="form.html">Подобрать программу</a>
-    </picture>
       </div>
     </section>
     <!-- Выбор программ питания -->
@@ -141,12 +143,16 @@
       <div class="slider__wrapper">
         <div class="slider__image-wrapper slider__image-wrapper--before">
           <picture>
+            <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/index/tablet/cat-before-tablet.webp 1x, img/index/retina/cat-before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index/mobile/cat-before-mobile.webp 1x, img/index/retina/cat-before-mobile@2x.webp 2x"> -->
             <source media="(min-width: 768px)" srcset="img/index/tablet/cat-before-tablet.png 1x, img/index/retina/cat-before-tablet@2x.png 2x" width="560" height="512">
             <img class="slider__image slider__image--mobile" src="img/index/mobile/cat-before-mobile.png" srcset="img/index/retina/cat-before-mobile@2x.png" width="280" height="256" alt="Кот до программы по снижению веса">
           </picture>
         </div>
           <div class="slider__image-wrapper slider__image-wrapper--after">
             <picture>
+              <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/index/tablet/cat-after-tablet.webp 1x, img/index/retina/cat-after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index/mobile/cat-after-mobile.webp 1x, img/index/retina/cat-after-mobile@2x.webp 2x"> -->
             <source media="(min-width: 768px)" srcset="img/index/tablet/cat-after-tablet.png 1x, img/index/retina/cat-after-tablet@2x.png 2x" width="560" height="512">
             <img class="slider__image slider__image--mobile" src="img/index/mobile/cat-after-mobile.png" srcset="img/index/retina/cat-after-mobile@2x.png" width="280" height="256" alt="Кот после программы по снижению веса">
           </picture>
@@ -177,7 +183,7 @@
       <div class="main-footer__wrapper container">
       <div class="main-footer__logo logo logo--footer">
         <a class="logo__text--footer" href="index.html" aria-label="Главная страница">
-          <img src="img/index/icons/logo-mobile-text.svg" width="128" height="24" alt="Логотип интернет-магазина Cat-energy">
+          <img src="img/index/bg-icons/logo-mobile-text.svg" width="128" height="24" alt="Логотип интернет-магазина Cat-energy">
         </a>
       </div>
       <!-- Социальный сети -->
