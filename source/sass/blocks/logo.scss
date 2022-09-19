@@ -1,15 +1,14 @@
-.logo--footer {
-  position: relative;
-}
-
-.logo-link {
+.logo__link {
   display: block;
 }
 
-// .logo__picture {
-//   width: 33px;
-//   height: 38px;
-// }
+.logo__link:hover {
+  opacity: 0.8;
+}
+
+.logo__link:active {
+  opacity: 0.3;
+}
 
 .logo__text {
   width: 101px;

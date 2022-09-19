@@ -15,18 +15,14 @@
 <body class="page__body">
   <!-- Хедер -->
   <header class="main-header container">
-    <div class="main-header__logo logo">
-        <a class="logo__picture" href="index.html" aria-label="Главная страница">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/index/bg-icons/logo-desktop.svg" width="70" height="60">
-            <source media="(min-width: 768px)" srcset="img/index/bg-icons/logo-tablet.svg" width="60" height="50">
-            <img src="img/index/bg-icons/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина Cat-energy">
-        </picture>
+      <a class="main-header__logo logo__link" href="index.html" aria-label="Главная страница">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/index/bg-icons/logo-desktop.svg" width="70" height="60">
+          <source media="(min-width: 768px)" srcset="img/index/bg-icons/logo-tablet.svg" width="60" height="50">
+          <img class="logo__picture" src="img/index/bg-icons/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина Cat-energy">
+      </picture>
+          <img class="logo__text" src="img/index/bg-icons/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
         </a>
-        <a class="logo__text" href="index.html" aria-label="Главная страница">
-          <img src="img/index/bg-icons/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
-        </a>
-      </div>
       <!-- Навигация -->
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <button class="main-navigation__toggle" type="button">
@@ -143,16 +139,16 @@
       <div class="slider__wrapper">
         <div class="slider__image-wrapper slider__image-wrapper--before">
           <picture>
-            <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/index/tablet/cat-before-tablet.webp 1x, img/index/retina/cat-before-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/index/mobile/cat-before-mobile.webp 1x, img/index/retina/cat-before-mobile@2x.webp 2x"> -->
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index/tablet/cat-before-tablet.webp 1x, img/index/retina/cat-before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index/mobile/cat-before-mobile.webp 1x, img/index/retina/cat-before-mobile@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/index/tablet/cat-before-tablet.png 1x, img/index/retina/cat-before-tablet@2x.png 2x" width="560" height="512">
             <img class="slider__image slider__image--mobile" src="img/index/mobile/cat-before-mobile.png" srcset="img/index/retina/cat-before-mobile@2x.png" width="280" height="256" alt="Кот до программы по снижению веса">
           </picture>
         </div>
           <div class="slider__image-wrapper slider__image-wrapper--after">
             <picture>
-              <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/index/tablet/cat-after-tablet.webp 1x, img/index/retina/cat-after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/index/mobile/cat-after-mobile.webp 1x, img/index/retina/cat-after-mobile@2x.webp 2x"> -->
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index/tablet/cat-after-tablet.webp 1x, img/index/retina/cat-after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index/mobile/cat-after-mobile.webp 1x, img/index/retina/cat-after-mobile@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/index/tablet/cat-after-tablet.png 1x, img/index/retina/cat-after-tablet@2x.png 2x" width="560" height="512">
             <img class="slider__image slider__image--mobile" src="img/index/mobile/cat-after-mobile.png" srcset="img/index/retina/cat-after-mobile@2x.png" width="280" height="256" alt="Кот после программы по снижению веса">
           </picture>
@@ -182,7 +178,7 @@
       <!-- Лого -->
       <div class="main-footer__wrapper container">
       <div class="main-footer__logo logo logo--footer">
-        <a class="logo__text--footer" href="index.html" aria-label="Главная страница">
+        <a class="logo__link logo__text--footer" href="index.html" aria-label="Главная страница">
           <img src="img/index/bg-icons/logo-mobile-text.svg" width="128" height="24" alt="Логотип интернет-магазина Cat-energy">
         </a>
       </div>
@@ -190,21 +186,21 @@
       <ul class="main-footer__social-list social-list">
         <li class="social-list__item">
           <a class="social-list__link social-list__link--vkontacte" href="#" target="_blank" aria-label="Мы вконтакте">
-            <svg class="social-list__icon" aria-hidden="true" focusable="false" width="28" height="22" fill="none">
+            <svg class="social-list__icon" aria-hidden="true" focusable="false" width="28" height="22">
               <use xlink:href="img/sprite/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link social-list__link--youtube" href="#" target="_blank"aria-label="Мы в Ютубе">
-            <svg class="social-list__icon" aria-hidden="true" focusable="false" width="28" height="22" fill="none">
+            <svg class="social-list__icon" aria-hidden="true" focusable="false" width="28" height="22">
               <use xlink:href="img/sprite/sprite.svg#youtube"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link social-list__link--telegram" href="#" target="_blank" aria-label="Мы в телеграме">
-            <svg class="social-list__icon" aria-hidden="true" focusable="false" width="28" height="22" fill="none">
+            <svg class="social-list__icon" aria-hidden="true" focusable="false" width="28" height="22">
               <use xlink:href="img/sprite/sprite.svg#telegram"></use>
             </svg>
           </a>
@@ -213,7 +209,7 @@
       <!-- HTML Academy -->
       <a class="main-footer__html-logo-link html-logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="html-logo-link__text">HTML Academy</span>
-        <svg class="html-logo-link__icon" aria-label="Сайт HTML-Academy" width="27" height="34" fill="none">
+        <svg class="html-logo-link__icon" aria-label="Сайт HTML-Academy" width="27" height="34">
           <use xlink:href="img/sprite/sprite.svg#html-logo"></use>
         </svg>
       </a>

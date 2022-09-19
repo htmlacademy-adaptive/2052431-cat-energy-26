@@ -10,18 +10,14 @@
 
 <body class="page__body">
   <header class="main-header container">
-    <div class="main-header__logo logo">
-      <a class="logo__picture" href="index.html" aria-label="Главная страница">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/index/bg-icons/logo-desktop.svg" width="70" height="60">
-          <source media="(min-width: 768px)" srcset="img/index/bg-icons/logo-tablet.svg" width="60" height="50">
-        <img src="img/index/bg-icons/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина Cat-energy">
-      </picture>
+    <a class="main-header__logo logo__link" href="index.html" aria-label="Главная страница">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/index/bg-icons/logo-desktop.svg" width="70" height="60">
+        <source media="(min-width: 768px)" srcset="img/index/bg-icons/logo-tablet.svg" width="60" height="50">
+        <img class="logo__picture" src="img/index/bg-icons/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина Cat-energy">
+    </picture>
+        <img class="logo__text" src="img/index/bg-icons/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
       </a>
-      <a class="logo__text" href="index.html" aria-label="Главная страница">
-        <img src="img/index/bg-icons/logo-mobile-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat-energy">
-      </a>
-    </div>
     <!-- Навигация -->
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <button class="main-navigation__toggle" type="button">
@@ -98,7 +94,7 @@
             <label class="text-field__label" for="email"> E-mail:* </label>
               <input class="text-field__input text-field__input--owner text-field__input--email" type="email" id="email" name="email"
                 placeholder="Введите ваш email" value="kuklachev@gmail.com" required>
-                <svg class="text-field__input-icon" aria-hidden="true" focusable="false" width="20" height="15" fill="none"">
+                <svg class="text-field__input-icon" aria-hidden="true" focusable="false" width="20" height="15">
                   <use xlink:href="img/sprite/sprite.svg#icon-email"></use>
                   </svg>
               </li>
@@ -106,7 +102,7 @@
             <label class="text-field__label text-field__label--icon" for="phone"> Телефон:*</label>
               <input class="text-field__input text-field__input--owner text-field__input--phone" type="tel" id="phone" name="phone-number"
                 placeholder="Введите ваш номер телефона" value="8 (960) 900-60-90" required>
-                <svg class="text-field__input-icon" aria-hidden="true" focusable="false" width="20" height="21" fill="none">
+                <svg class="text-field__input-icon" aria-hidden="true" focusable="false" width="20" height="21">
                   <use xlink:href="img/sprite/sprite.svg#icon-phone"></use>
                   </svg>
           </li>
@@ -185,21 +181,21 @@
       <ul class="main-footer__social-list social-list">
         <li class="social-list__item">
           <a class="social-list__link social-list__link--vkontacte" href="#" target="_blank" aria-label="Мы вконтакте">
-            <svg class="social-list__icon" aria-hidden="true" focusable="false" width="28" height="22" fill="none">
+            <svg class="social-list__icon" aria-hidden="true" focusable="false" width="28" height="22">
               <use xlink:href="img/sprite/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link social-list__link--youtube" href="#" target="_blank"aria-label="Мы в Ютубе">
-            <svg class="social-list__icon" aria-hidden="true" focusable="false" width="28" height="22" fill="none">
+            <svg class="social-list__icon" aria-hidden="true" focusable="false" width="28" height="22">
               <use xlink:href="img/sprite/sprite.svg#youtube"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link social-list__link--telegram" href="#" target="_blank" aria-label="Мы в телеграме">
-            <svg class="social-list__icon" aria-hidden="true" focusable="false" width="28" height="22" fill="none">
+            <svg class="social-list__icon" aria-hidden="true" focusable="false" width="28" height="22" >
               <use xlink:href="img/sprite/sprite.svg#telegram"></use>
             </svg>
           </a>
@@ -208,7 +204,7 @@
       <!-- HTML Academy -->
       <a class="main-footer__html-logo-link html-logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="html-logo-link__text">HTML Academy</span>
-        <svg class="html-logo-link__icon" aria-label="Сайт HTML-Academy" width="27" height="34" fill="none">
+        <svg class="html-logo-link__icon" aria-label="Сайт HTML-Academy" width="27" height="34">
           <use xlink:href="img/sprite/sprite.svg#html-logo"></use>
         </svg>
       </a>

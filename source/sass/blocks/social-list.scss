@@ -39,6 +39,10 @@
   }
 }
 
-.social-list__link:hover .social-list__icon {
+.social-list__link:hover {
   color: $basic-green;
+}
+
+.social-list__link:active {
+  opacity: 0.3;
 }
