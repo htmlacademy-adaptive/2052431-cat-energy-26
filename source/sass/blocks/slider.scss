@@ -65,51 +65,73 @@
   top: 0;
   left: 138px;
   content: "";
-  width: 2px;
+  width: 4px;
   height: 256px;
   border-radius: 2px;
   background-color: #666666;
   margin: 0;
   padding: 0;
   border: none;
+  color: #666666;
 
 
   @media (min-width: $tablet-width) {
-    left: 279px;
+    left: 272px;
     height: 512px;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 278px;
   }
 
   &::before {
     position: absolute;
-    top: 108px;
-    left: -18px;
     content: "";
+    top: 110px;
+    right: -20px;
     width: 40px;
     height: 40px;
+    background-color: #ffffff;
     border-radius: 50%;
     border: 2px solid #666666;
-    background-color: $white;
-    background-image: url("../../img/index/bg-icons/slider-arrows.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 
     @media (min-width: $tablet-width) {
-      top: 236px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 236px;
+      top: 235px;
+      right: -18px;
     }
   }
 }
 
 .slider-range:hover {
   background-color: $basic-green;
+  color: $basic-green;
 }
 
-.slider-range:hover .slider-range::before {
-  border-color: $basic-green;
-  background-image: url("../../img/index/bg-icons/slider-arrows-green.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.slider-range:hover::before {
+  border: 2px solid $basic-green;
 }
+
+.slider-range:active {
+  background-color: #5eaa2f;
+  color: $basic-green;
+  opacity: 0.6;
+}
+
+.slider-range:active::before {
+  border: 2px solid #5eaa2f;
+  opacity: 0.6;
+}
+
+.slider-range__icon {
+  z-index: 40;
+  position: absolute;
+  content: "";
+  top: 110px;
+  right: -20px;
+
+  @media (min-width: $tablet-width) {
+    top: 235px;
+    right: -18px;
+  }
+}
+

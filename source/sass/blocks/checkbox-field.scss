@@ -12,6 +12,8 @@
   border: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
+    flex-basis: auto;
+    flex-shrink: 0;
     width: 40px;
     height: 40px;
   }
@@ -25,6 +27,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    flex-basis: auto;
     font-size: 20px;
     line-height: 30px;
   }
@@ -68,4 +71,8 @@
 
 .checkbox-field__input:focus + .checkbox-field__control-mark {
   border-color: $black;
+}
+
+.checkbox-field__input:disabled {
+  opacity: 0.3;
 }

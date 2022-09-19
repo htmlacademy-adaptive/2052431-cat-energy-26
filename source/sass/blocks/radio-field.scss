@@ -1,4 +1,5 @@
 .radio-field__control {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -16,10 +17,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-}
-
-.radio-field__input {
-  position: relative;
 }
 
 .radio-field__control-mark {
