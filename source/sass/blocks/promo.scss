@@ -1,10 +1,10 @@
 .promo {
-  position: relative;
+  // position: relative;
   padding-top: 27px;
 
   &::after {
     position: absolute;
-    top: 0;
+    top: 65px;
     width: 100%;
     min-height: 302px;
     content: "";
@@ -23,7 +23,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    padding-top: 50px;
+    padding-top: 59px;
 
     &::after {
       display: none;
@@ -33,13 +33,13 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding-top: 32px;
+    padding-top: 46px;
     margin-bottom: 82px;
 
     &::after {
       display: block;
       position: absolute;
-      top: -120px;
+      top: 0;
       right: 0;
       z-index: -15;
       width: 50%;
@@ -85,6 +85,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 67px;
     margin-bottom: 185px;
+    max-width: 50%;
   }
 }
 

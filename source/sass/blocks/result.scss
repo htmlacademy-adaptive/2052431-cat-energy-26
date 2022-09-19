@@ -189,7 +189,9 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    align-items: flex-start;
     padding-left: 4px;
+    text-align: left;
   }
 }
 

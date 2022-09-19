@@ -94,10 +94,6 @@
   right: 15px;
 }
 
-.text-field__input--owner:hover .text-field__input-icon {
-  color: $basic-green;
-}
-
 .text-field__input--owner {
   padding-left: 10px;
 
@@ -105,4 +101,8 @@
     padding-left: 18px;
     padding-top: 13px;
   }
+}
+
+.text-field__input--owner:focus + .text-field__input-icon {
+  color: $basic-green;
 }
