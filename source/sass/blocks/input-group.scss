@@ -35,6 +35,10 @@
 
 .input-group__item:last-child:last-child {
   margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .input-group__item--owner {
@@ -42,6 +46,6 @@
 
   @media (min-width: $desktop-width) {
     width: 50%;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 }

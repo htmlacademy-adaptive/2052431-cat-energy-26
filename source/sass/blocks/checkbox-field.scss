@@ -76,3 +76,7 @@
 .checkbox-field__input:disabled ~ span {
   opacity: 0.3;
 }
+
+.checkbox-field__input[disabled]:hover + .checkbox-field__control-mark::before {
+  display: none;
+}
