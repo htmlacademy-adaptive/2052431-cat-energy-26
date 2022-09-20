@@ -4,7 +4,7 @@
 
 
   @media (min-width: $tablet-width) {
-    height: 511px;
+    min-height: 511px;
     padding: 34px 36px 40px 36px;
     background: linear-gradient(#ffffff 15%, #f2f2f2 15%);
   }

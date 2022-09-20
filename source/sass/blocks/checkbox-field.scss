@@ -6,20 +6,21 @@
 .checkbox-field__control-mark {
   position: relative;
   display: block;
+  flex-basis: auto;
+  flex-shrink: 0;
   margin-right: 16px;
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
-    flex-basis: auto;
-    flex-shrink: 0;
     width: 40px;
     height: 40px;
   }
 }
 
 .checkbox-field__control-label {
+  flex-basis: auto;
   font-family: $additional-font-family;
   font-size: 16px;
   line-height: 18px;
@@ -27,7 +28,6 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    flex-basis: auto;
     font-size: 20px;
     line-height: 30px;
   }
@@ -73,6 +73,6 @@
   border-color: $black;
 }
 
-.checkbox-field__input:disabled {
+.checkbox-field__input:disabled ~ span {
   opacity: 0.3;
 }
