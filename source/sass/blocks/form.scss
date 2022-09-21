@@ -14,8 +14,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 70px;
+    align-items: flex-start;
+    margin-bottom: 64px;
   }
 }
 
@@ -47,7 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 57px;
   }
 }
 
@@ -73,7 +73,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 41px;
   }
-  }
+}
 
 .form__fieldset--checkbox-group {
   margin-bottom: 34px;
@@ -85,7 +85,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 61px;
   }
-  }
+}
 
 
 .form__list {
