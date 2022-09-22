@@ -5,9 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
@@ -19,7 +17,7 @@
 <body class="page__body">
   <!-- Хедер -->
   <header class="main-header container">
-      <a class="main-header__logo logo__link" href="index.html" aria-label="Главная страница">
+      <a class="main-header__logo logo" href="index.html" aria-label="Главная страница">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/index/bg-icons/logo-desktop.svg" width="70" height="60">
           <source media="(min-width: 768px)" srcset="img/index/bg-icons/logo-tablet.svg" width="60" height="50">
@@ -140,7 +138,7 @@
           </p>
       </div>
     </div>
-      <div class="slider__wrapper">
+      <div class="slider">
         <div class="slider__image-wrapper slider__image-wrapper--before">
           <picture>
             <source type="image/webp" media="(min-width: 768px)" srcset="img/index/tablet/cat-before-tablet.webp 1x, img/index/retina/cat-before-tablet@2x.webp 2x">
@@ -157,9 +155,9 @@
             <img class="slider__image slider__image--mobile" src="img/index/mobile/cat-after-mobile.png" srcset="img/index/retina/cat-after-mobile@2x.png" width="280" height="256" alt="Кот после программы по снижению веса">
           </picture>
           </div>
-          <button class="slider-range">
+          <button class="slider__range">
             <span class="visually-hidden">Сравнить фото до и после</span>
-            <svg class="slider-range__icon" aria-hidden="true" focusable="false" width="40" height="40">
+            <svg class="slider__range-icon" aria-hidden="true" focusable="false" width="40" height="40">
               <use xlink:href="img/sprite/sprite.svg#slider-arrows"></use>
             </svg>
           </button>
@@ -184,11 +182,11 @@
         </section>
       <!-- Лого -->
       <div class="main-footer__wrapper container">
-      <div class="main-footer__logo logo logo--footer">
-        <a class="logo__link logo__text--footer" href="index.html" aria-label="Главная страница">
-          <img src="img/index/bg-icons/logo-mobile-text.svg" width="128" height="24" alt="Логотип интернет-магазина Cat-energy">
-        </a>
-      </div>
+        <div class="main-footer__logo logo logo--footer">
+          <a class="logo__text logo__text--footer" href="index.html" aria-label="Главная страница">
+            <img src="img/index/bg-icons/logo-mobile-text-footer.svg" width="128" height="24" alt="Логотип интернет-магазина Cat-energy">
+          </a>
+        </div>
       <!-- Социальный сети -->
       <ul class="main-footer__social-list social-list">
         <li class="social-list__item">

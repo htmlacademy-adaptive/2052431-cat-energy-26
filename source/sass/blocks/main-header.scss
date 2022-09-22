@@ -51,3 +51,11 @@
     height: 60px;
   }
 }
+
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.3;
+}

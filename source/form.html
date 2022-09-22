@@ -5,9 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
@@ -18,7 +16,7 @@
 
 <body class="page__body">
   <header class="main-header container">
-    <a class="main-header__logo logo__link" href="index.html" aria-label="Главная страница">
+    <a class="main-header__logo logo" href="index.html" aria-label="Главная страница">
       <picture>
         <source media="(min-width: 1440px)" srcset="img/index/bg-icons/logo-desktop.svg" width="70" height="60">
         <source media="(min-width: 768px)" srcset="img/index/bg-icons/logo-tablet.svg" width="60" height="50">
@@ -46,7 +44,7 @@
     <h1 class="inner-container__title inner-container__title--form main-title">Подбор программы</h1>
     <p class="inner-container__text form-caption">Заполните анкету, и мы подберем <br>
       программу питания для вашего кота</p>
-    <form class="main-container__form form" action="https://echo.htmlacademy.ru/" method="post" name="program-form">
+    <form class="inner-container__form form" action="https://echo.htmlacademy.ru/" method="post" name="program-form">
       <div class="form__fieldset-wrapper">
       <fieldset class="form__fieldset form__fieldset--pet form__fieldset--input-group input-group">
         <legend class="visually-hidden">Информация о животном</legend>
@@ -147,8 +145,8 @@
               <span class="checkbox-field__control-label">Молоко</span>
             </label>
           </li>
-          <li class="checkbox-group__item">
-            <label class="checkbox-field__control checkbox-field">
+          <li class="checkbox-group__item  checkbox-field">
+            <label class="checkbox-field__control">
               <input class="checkbox-field__input visually-hidden" type="checkbox" name="vitamins">
               <span class="checkbox-field__control-mark"></span>
               <span class="checkbox-field__control-label">Витамины</span>
@@ -181,8 +179,8 @@
       <!-- Лого -->
       <div class="main-footer__wrapper container">
       <div class="main-footer__logo logo logo--footer">
-        <a class="logo__text--footer" href="index.html" aria-label="Главная страница">
-          <img src="img/index/bg-icons/logo-mobile-text.svg" width="128" height="24" alt="Логотип интернет-магазина Cat-energy">
+        <a class="logo__text logo__text--footer" href="index.html" aria-label="Главная страница">
+          <img src="img/index/bg-icons/logo-mobile-text-footer.svg" width="128" height="24" alt="Логотип интернет-магазина Cat-energy">
         </a>
       </div>
       <!-- Социальный сети -->
