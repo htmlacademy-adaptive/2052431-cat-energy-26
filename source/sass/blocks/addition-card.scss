@@ -10,9 +10,19 @@
   }
 }
 
+.addition-card__title-link {
+  display: block;
+  margin-bottom: 15px;
+  color: #222222;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .addition-card__title {
   margin: 0;
-  margin-bottom: 15px;
   font-family: $additional-font-family;
   font-weight: 400;
   font-size: 16px;

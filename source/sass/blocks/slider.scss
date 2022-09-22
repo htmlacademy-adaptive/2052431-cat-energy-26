@@ -1,4 +1,4 @@
-.slider__wrapper {
+.slider {
   position: relative;
   margin: 0 auto;
   width: 280px;
@@ -60,7 +60,7 @@
   }
 }
 
-.slider-range {
+.slider__range {
   position: absolute;
   top: 0;
   left: 138px;
@@ -102,27 +102,27 @@
   }
 }
 
-.slider-range:hover {
+.slider__range:hover {
   background-color: $basic-green;
   color: $basic-green;
 }
 
-.slider-range:hover::before {
+.slider__range:hover::before {
   border: 2px solid $basic-green;
 }
 
-.slider-range:active {
+.slider__range:active {
   background-color: #5eaa2f;
   color: $basic-green;
   opacity: 0.6;
 }
 
-.slider-range:active::before {
+.slider__range:active::before {
   border: 2px solid #5eaa2f;
   opacity: 0.6;
 }
 
-.slider-range__icon {
+.slider__range-icon {
   z-index: 40;
   position: absolute;
   content: "";
